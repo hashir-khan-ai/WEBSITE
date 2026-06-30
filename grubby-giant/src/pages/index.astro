@@ -1,0 +1,606 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="container">
+			<a href="#projects" class="banner-marketing reveal-on-scroll">
+				<span class="badge">New</span>
+				<span>Discover our latest case studies and integrations</span>
+				<svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 2px;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7,7 17,7 17,17"></polyline></svg>
+			</a>
+			
+			<h1 class="hero-title reveal-on-scroll">Automate your business operations with AI workflows<span class="period">.</span></h1>
+			<p class="hero-subtitle text-lead reveal-on-scroll">
+				Deploy production-grade AI Agents that qualify leads, handle customer support, and automate booking scheduling 24/7. Integrate with your current CRM and database systems.
+			</p>
+			
+			<div class="hero-ctas reveal-on-scroll">
+				<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary" aria-label="Schedule Meeting">
+					<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+					<span>Schedule Meeting</span>
+				</a>
+   						<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp animate-glow" aria-label="Chat on WhatsApp">
+							<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.437 0 9.862-4.403 9.865-9.81.001-2.62-1.013-5.083-2.857-6.93C16.536 2.019 14.07 1.003 11.45 1.002 6.012 1.002 1.584 5.405 1.581 10.81c-.001 1.63.432 3.218 1.256 4.615l-.993 3.627 3.71-.973.103.062zM17.487 14.39c-.3-.15-1.774-.875-2.029-.968-.254-.093-.44-.139-.625.139-.186.278-.718.903-.88 1.088-.163.186-.325.208-.625.058-.3-.15-1.267-.467-2.414-1.493-.893-.796-1.495-1.78-1.67-2.08-.175-.3-.019-.463.13-.612.134-.133.3-.347.45-.52.149-.174.199-.297.299-.497.1-.2.05-.375-.025-.524-.075-.15-.625-1.505-.856-2.063-.225-.542-.472-.468-.648-.477-.168-.008-.36-.01-.552-.01-.192 0-.505.072-.77.36-.264.288-1.009.986-1.009 2.404s1.033 2.788 1.177 2.98c.145.195 2.033 3.103 4.925 4.35.688.297 1.224.474 1.643.607.69.219 1.319.19 1.815.115.553-.083 1.774-.725 2.024-1.425.25-.7.25-1.298.175-1.425-.076-.127-.26-.203-.56-.353z"/></svg>
+							<span>WhatsApp Chat</span>
+						</a>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=hashirmehmoodkhan.pk@gmail.com" target="_blank" class="btn btn-email-gmail animate-glow" aria-label="Email Us">
+							<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+							<span>📧 Email Me</span>
+						</a>
+					</div>
+			
+			<!-- Interactive Live Workflow Terminal -->
+			<div class="terminal-wrapper">
+				<div class="terminal-header">
+					<div class="terminal-buttons">
+						<span class="terminal-btn red"></span>
+						<span class="terminal-btn yellow"></span>
+						<span class="terminal-btn green"></span>
+					</div>
+					<div class="terminal-title mono">workflow-agent.log</div>
+					<div style="width: 32px;"></div>
+				</div>
+				<div class="terminal-body mono" id="terminalBody">
+					<!-- Animated workflow items will be injected here via client-side javascript -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Stats Bar -->
+	<section class="stats-bar reveal-on-scroll">
+		<div class="container">
+			<div class="stats-grid">
+				<div class="stat-item">
+					<span class="stat-val">500+</span>
+					<span class="stat-lbl">Projects</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-val">50+</span>
+					<span class="stat-lbl">Industries</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-val">4.9★</span>
+					<span class="stat-lbl">Client Rating</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-val">100%</span>
+					<span class="stat-lbl">On-Time Delivery</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section id="services" class="section-padding reveal-on-scroll">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Capabilities</span>
+				<h2>Services we provide<span class="period">.</span></h2>
+				<p>We build production-grade agentic systems tailored to your tools and goals, replacing overhead with autonomous automation.</p>
+			</div>
+			
+			<div class="services-grid">
+				<!-- Service 1 -->
+				<div class="card-marketing reveal-on-scroll">
+					<div class="card-icon-container">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+						</svg>
+					</div>
+					<span class="card-meta-tag mono">AGENT_TYPE_01 // HELP_DESK</span>
+					<h3>AI Customer Support Chatbots</h3>
+					<p>Intelligent, context-aware bots trained on your internal documentation to resolve customer issues and guide inquiries 24/7 without manual support overhead.</p>
+				</div>
+				
+				<!-- Service 2 -->
+				<div class="card-marketing reveal-on-scroll">
+					<div class="card-icon-container">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+						</svg>
+					</div>
+					<span class="card-meta-tag mono">AGENT_TYPE_02 // LEADS</span>
+					<h3>Lead Qualification & Management</h3>
+					<p>Automate incoming prospect filtering. Qualify prospects by intent, enrich company profile info via APIs, and automatically distribute leads to sales agents in your CRM.</p>
+				</div>
+				
+				<!-- Service 3 -->
+				<div class="card-marketing reveal-on-scroll">
+					<div class="card-icon-container">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+							<line x1="16" y1="2" x2="16" y2="6"></line>
+							<line x1="8" y1="2" x2="8" y2="6"></line>
+							<line x1="3" y1="10" x2="21" y2="10"></line>
+						</svg>
+					</div>
+					<span class="card-meta-tag mono">AGENT_TYPE_03 // CALENDAR</span>
+					<h3>Appointment Scheduling Automation</h3>
+					<p>End the email back-and-forth. Our agents resolve availability conflicts, propose slots, and automatically book meetings in Calendly or Google Calendar directly inside chats.</p>
+				</div>
+				
+				<!-- Service 4 -->
+				<div class="card-marketing reveal-on-scroll">
+					<div class="card-icon-container">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<polyline points="16 18 22 12 16 6"></polyline>
+							<polyline points="8 6 2 12 8 18"></polyline>
+						</svg>
+					</div>
+					<span class="card-meta-tag mono">AGENT_TYPE_04 // INTEGRATION</span>
+					<h3>Workflow & API Integrations</h3>
+					<p>Glue your systems together. We build custom API bridges connecting webhooks, databases, CRMs, and messaging apps to establish frictionless data flows.</p>
+				</div>
+				
+				<!-- Service 5 -->
+				<div class="card-marketing reveal-on-scroll">
+					<div class="card-icon-container">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+							<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+							<line x1="6" y1="6" x2="6.01" y2="6"></line>
+							<line x1="6" y1="18" x2="6.01" y2="18"></line>
+						</svg>
+					</div>
+					<span class="card-meta-tag mono">AGENT_TYPE_05 // CUSTOM</span>
+					<h3>Custom AI Assistant Development</h3>
+					<p>Bespoke assistant systems optimized to perform specialized business logic: document summarization, PDF report generation, status checking, or translation.</p>
+				</div>
+				
+				<!-- Service 6 -->
+				<div class="card-marketing reveal-on-scroll">
+					<div class="card-icon-container">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10"></circle>
+							<polyline points="12 6 12 12 16 14"></polyline>
+						</svg>
+					</div>
+					<span class="card-meta-tag mono">AGENT_TYPE_06 // TRIGGER</span>
+					<h3>24/7 Automated Response Systems</h3>
+					<p>Never miss a lead or query. Instant responses to WhatsApp, email, SMS, and website forms. Boost your lead conversions and keep customer satisfaction scores at 4.9★+.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Case Studies Section (Dark Polarity Flip) -->
+	<section id="projects" class="section-padding showcase-band-dark reveal-on-scroll">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Case Studies</span>
+				<h2>Featured projects and results<span class="period">.</span></h2>
+				<p>See how our tailored AI Agent systems solve real bottleneck problems and deliver measurable ROI to businesses.</p>
+			</div>
+			
+			<div class="case-studies-container">
+				<!-- Project 1 -->
+				<div class="case-study-card reveal-on-scroll">
+					<div class="case-study-top">
+						<div class="case-study-title-area">
+							<h3>Dental Clinic Automation</h3>
+							<div class="case-study-meta mono">Dr. Sarah Mitchell | Clinic Director | BrightSmile Dental | June 2026</div>
+						</div>
+						<div class="case-study-rating">★★★★★</div>
+					</div>
+					
+					<div class="case-study-sections">
+						<div class="case-study-section">
+							<h4>Problem</h4>
+							<p>Overwhelmed with appointment inquiries, insurance questions, and after-hours calls. Front desk staff was spending 3+ hours daily on repetitive phone calls.</p>
+						</div>
+						<div class="case-study-section">
+							<h4>Solution</h4>
+							<p>Deployed a custom AI conversational chatbot integrated with the clinic's calendar and scheduling tool for booking and FAQ resolution.</p>
+						</div>
+					</div>
+					
+					<div class="case-study-results">
+						<h4>Results</h4>
+						<div class="results-tags">
+							<span class="result-tag-pill">70% Fewer Phone Calls</span>
+							<span class="result-tag-pill">15+ Hours Saved/Week</span>
+							<span class="result-tag-pill">Patient Satisfaction +40%</span>
+						</div>
+					</div>
+					
+					<div class="case-study-quote">
+						"This AI system transformed our front desk. Patients love booking at midnight, and my staff finally focuses on actual dental care. Best investment we've made."
+						<div class="case-study-quote-author">— Dr. Sarah Mitchell, Clinic Director</div>
+					</div>
+				</div>
+
+				<!-- Project 2 -->
+				<div class="case-study-card reveal-on-scroll">
+					<div class="case-study-top">
+						<div class="case-study-title-area">
+							<h3>Immigration Consulting Assistant</h3>
+							<div class="case-study-meta mono">James Chen | Managing Partner | GlobalVisa Advisors | May 2026</div>
+						</div>
+						<div class="case-study-rating">★★★★★</div>
+					</div>
+					
+					<div class="case-study-sections">
+						<div class="case-study-section">
+							<h4>Problem</h4>
+							<p>200+ daily inquiries regarding visa types, documentation, and case status. Two full-time support staff were occupied just answering repetitive qualification questions.</p>
+						</div>
+						<div class="case-study-section">
+							<h4>Solution</h4>
+							<p>Created an AI Immigration assistant that reviews applicant details, provides customized checklists, and traces application timelines.</p>
+						</div>
+					</div>
+					
+					<div class="case-study-results">
+						<h4>Results</h4>
+						<div class="results-tags">
+							<span class="result-tag-pill">85% Inquiries Handled by AI</span>
+							<span class="result-tag-pill">Lead Conversion +60%</span>
+							<span class="result-tag-pill">$8,000/Month Saved</span>
+						</div>
+					</div>
+					
+					<div class="case-study-quote">
+						"We were drowning in inquiries. Now our AI handles everything from 'What's an I-485?' to complex case timelines. Revenue up 45% in 3 months."
+						<div class="case-study-quote-author">— James Chen, Managing Partner</div>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="case-study-card reveal-on-scroll">
+					<div class="case-study-top">
+						<div class="case-study-title-area">
+							<h3>Real Estate Agentic Pipeline</h3>
+							<div class="case-study-meta mono">Lisa Rodriguez | Broker / Owner | Metro Homes Group | April 2026</div>
+						</div>
+						<div class="case-study-rating">★★★★★</div>
+					</div>
+					
+					<div class="case-study-sections">
+						<div class="case-study-section">
+							<h4>Problem</h4>
+							<p>Missing hot buyer leads after office hours. Real estate agents were spending 2+ hours daily trying to reach and pre-qualify inbound callers.</p>
+						</div>
+						<div class="case-study-section">
+							<h4>Solution</h4>
+							<p>Set up an AI lead qualification agent connected to property records, immediately following up and pre-qualifying leads via WhatsApp/SMS.</p>
+						</div>
+					</div>
+					
+					<div class="case-study-results">
+						<h4>Results</h4>
+						<div class="results-tags">
+							<span class="result-tag-pill">Zero Missed Leads</span>
+							<span class="result-tag-pill">73% Leads Pre-Qualified</span>
+							<span class="result-tag-pill">+12 Deals Closed in Q2</span>
+						</div>
+					</div>
+					
+					<div class="case-study-quote">
+						"Our AI never sleeps. I wake up to 5 qualified appointments booked overnight. This is how real estate works in 2026."
+						<div class="case-study-quote-author">— Lisa Rodriguez, Broker / Owner</div>
+					</div>
+				</div>
+
+				<!-- Project 4 -->
+				<div class="case-study-card reveal-on-scroll">
+					<div class="case-study-top">
+						<div class="case-study-title-area">
+							<h3>E-Commerce Order Automations</h3>
+							<div class="case-study-meta mono">Marcus Thompson | CEO | FitGear Pro | March 2026</div>
+						</div>
+						<div class="case-study-rating">★★★★★</div>
+					</div>
+					
+					<div class="case-study-sections">
+						<div class="case-study-section">
+							<h4>Problem</h4>
+							<p>500+ daily customer support tickets regarding order status, returns, and catalog questions. Response time dragged to 24+ hours, hurting satisfaction.</p>
+						</div>
+						<div class="case-study-section">
+							<h4>Solution</h4>
+							<p>Developed an AI e-commerce agent integrated with Shopify for automated package tracking, instant returns processing, and catalog recommendations.</p>
+						</div>
+					</div>
+					
+					<div class="case-study-results">
+						<h4>Results</h4>
+						<div class="results-tags">
+							<span class="result-tag-pill">90% Support Tickets Resolved</span>
+							<span class="result-tag-pill">&lt;1 Minute Response Time</span>
+							<span class="result-tag-pill">CSAT Rating 4.9★</span>
+							<span class="result-tag-pill">+$18,000/Month Upsells</span>
+						</div>
+					</div>
+					
+					<div class="case-study-quote">
+						"Our AI knows our catalog better than my longest employee. Support costs dropped 70% while satisfaction went up."
+						<div class="case-study-quote-author">— Marcus Thompson, CEO</div>
+					</div>
+				</div>
+
+				<!-- Project 5 -->
+				<div class="case-study-card reveal-on-scroll">
+					<div class="case-study-top">
+						<div class="case-study-title-area">
+							<h3>Fitness Studio Booking Sync</h3>
+							<div class="case-study-meta mono">Amanda Foster | Studio Manager | Pulse Fitness | February 2026</div>
+						</div>
+						<div class="case-study-rating">★★★★★</div>
+					</div>
+					
+					<div class="case-study-sections">
+						<div class="case-study-section">
+							<h4>Problem</h4>
+							<p>Heavy intake of calls for class bookings, member questions, and rescheduling. Juggling booking conflict issues distracted front desk check-in staff.</p>
+						</div>
+						<div class="case-study-section">
+							<h4>Solution</h4>
+							<p>Implemented an AI booking agent connected to trainer schedules, coordinating booking updates and sending automated reminders.</p>
+						</div>
+					</div>
+					
+					<div class="case-study-results">
+						<h4>Results</h4>
+						<div class="results-tags">
+							<span class="result-tag-pill">Class Bookings +85%</span>
+							<span class="result-tag-pill">40% Convert to Members</span>
+							<span class="result-tag-pill">No-Shows Down to 8%</span>
+						</div>
+					</div>
+					
+					<div class="case-study-quote">
+						"Our AI books classes while we sleep. I see 12 new bookings at 6 AM. We're opening a second location because of this growth."
+						<div class="case-study-quote-author">— Amanda Foster, Studio Manager</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Interactive ROI Savings Calculator -->
+	<section id="calculator" class="section-padding reveal-on-scroll">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Interactive tool</span>
+				<h2>Calculate your business savings<span class="period">.</span></h2>
+				<p>See exactly how much resource overhead and time our custom AI workflows can reclaim for your operations.</p>
+			</div>
+			
+			<div class="calculator-box reveal-on-scroll">
+				<div class="calculator-grids">
+					<div class="calculator-sliders">
+						<div class="slider-group">
+							<div class="slider-header">
+								<span>Weekly repetitive work (hours)</span>
+								<span id="hoursVal" class="slider-value-display">20 hrs</span>
+							</div>
+							<input type="range" min="5" max="100" value="20" class="calc-slider" id="hoursSlider" aria-label="Repetitive work hours per week" />
+						</div>
+
+						<div class="slider-group">
+							<div class="slider-header">
+								<span>Average staff hourly rate</span>
+								<span id="rateVal" class="slider-value-display">$40/hr</span>
+							</div>
+							<input type="range" min="15" max="150" value="40" class="calc-slider" id="rateSlider" aria-label="Staff hourly rate" />
+						</div>
+					</div>
+
+					<div class="calculator-results">
+						<div class="result-metric">
+							<div id="savingsDisplay" class="result-metric-val">$2,560</div>
+							<div class="result-metric-lbl">Estimated monthly savings</div>
+						</div>
+						<div class="result-metric" style="border-top: 1px solid var(--color-hairline); padding-top: 20px;">
+							<div id="hoursReclaimedDisplay" class="result-metric-val">80 hrs</div>
+							<div class="result-metric-lbl">Hours reclaimed/month</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us Section -->
+	<section class="section-padding reveal-on-scroll" style="background-color: var(--color-canvas); border-top: 1px solid var(--color-hairline);">
+		<div class="container">
+			<div class="why-section-content">
+				<div>
+					<span class="section-eyebrow">Our approach</span>
+					<h2 style="margin-bottom: 20px;">Why work with us<span class="period">.</span></h2>
+					<p style="color: var(--color-body); margin-bottom: 32px; font-size: 1.05rem;">
+						We build functional, custom automations, not cookie-cutter templates. Every integration is fine-tuned to connect directly with your existing software stack and drive return on investment.
+					</p>
+					
+					<ul class="why-bullets">
+						<!-- Bullet 1 -->
+						<li class="why-bullet-item">
+							<span class="why-bullet-icon">✓</span>
+							<div class="why-bullet-text">
+								<h4>Custom-tailored solutions</h4>
+								<p>No cookie-cutter chatbot layouts. Every agent is customized to your system, rules, and database schema.</p>
+							</div>
+						</li>
+						<!-- Bullet 2 -->
+						<li class="why-bullet-item">
+							<span class="why-bullet-icon">✓</span>
+							<div class="why-bullet-text">
+								<h4>Native system integrations</h4>
+								<p>We connect agent endpoints with your active CRMs (HubSpot, Salesforce), Google Suite, Shopify, and messaging tools.</p>
+							</div>
+						</li>
+						<!-- Bullet 3 -->
+						<li class="why-bullet-item">
+							<span class="why-bullet-icon">✓</span>
+							<div class="why-bullet-text">
+								<h4>Hands-on training & handoff</h4>
+								<p>Comprehensive training resources for your employees to comfortably operate and monitor the automated pipelines.</p>
+							</div>
+						</li>
+						<!-- Bullet 4 -->
+						<li class="why-bullet-item">
+							<span class="why-bullet-icon">✓</span>
+							<div class="why-bullet-text">
+								<h4>Ongoing support & scaling</h4>
+								<p>Regular diagnostics, security updates, and performance tuning as your query logs and business grow.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<!-- Differentiator Mockup Diagram -->
+				<div class="why-graphic">
+					<div class="graphic-workflow-step">
+						<span class="step-label mono">1. Inbound inquiry (WhatsApp/Email)</span>
+						<span class="log-status info">Triggered</span>
+					</div>
+					<div class="step-arrow">↓</div>
+					<div class="graphic-workflow-step" style="border-color: var(--color-link);">
+						<span class="step-label mono">2. Custom AI agent analysis</span>
+						<span class="log-status working">Processing</span>
+					</div>
+					<div class="step-arrow">↓</div>
+					<div class="graphic-workflow-step">
+						<span class="step-label mono">3. Availability sync & query matching</span>
+						<span class="log-status info">Synced</span>
+					</div>
+					<div class="step-arrow">↓</div>
+					<div class="graphic-workflow-step" style="background-color: var(--color-success-bg-green); border-color: var(--color-success-green);">
+						<span class="step-label mono">4. Calendar book & CRM update</span>
+						<span class="log-status success" style="background-color:var(--color-success-green); color: white; border:none;">Completed</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Call to Action Band -->
+	<section id="contact" class="cta-band reveal-on-scroll">
+		<div class="container">
+			<div class="cta-card">
+				<h2>Ready to automate your operations<span class="period">?</span></h2>
+				<p>Every business automation in our showcase began with a single alignment conversation. Let's schedule a call to see how we can eliminate your overhead.</p>
+				
+				<div class="cta-buttons">
+					<button onclick="window.copyEmailAddress()" class="btn btn-email-copy" aria-label="Copy Email address">
+						<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+						<span>📧 Copy Email</span>
+					</button>
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-calendly" aria-label="Schedule Call">
+						<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+						<span>📅 Schedule Call</span>
+					</a>
+					<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp" aria-label="Chat on WhatsApp">
+						<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.437 0 9.862-4.403 9.865-9.81.001-2.62-1.013-5.083-2.857-6.93C16.536 2.019 14.07 1.003 11.45 1.002 6.012 1.002 1.584 5.405 1.581 10.81c-.001 1.63.432 3.218 1.256 4.615l-.993 3.627 3.71-.973.103.062zM17.487 14.39c-.3-.15-1.774-.875-2.029-.968-.254-.093-.44-.139-.625.139-.186.278-.718.903-.88 1.088-.163.186-.325.208-.625.058-.3-.15-1.267-.467-2.414-1.493-.893-.796-1.495-1.78-1.67-2.08-.175-.3-.019-.463.13-.612.134-.133.3-.347.45-.52.149-.174.199-.297.299-.497.1-.2.05-.375-.025-.524-.075-.15-.625-1.505-.856-2.063-.225-.542-.472-.468-.648-.477-.168-.008-.36-.01-.552-.01-.192 0-.505.072-.77.36-.264.288-1.009.986-1.009 2.404s1.033 2.788 1.177 2.98c.145.195 2.033 3.103 4.925 4.35.688.297 1.224.474 1.643.607.69.219 1.319.19 1.815.115.553-.083 1.774-.725 2.024-1.425.25-.7.25-1.298.175-1.425-.076-.127-.26-.203-.56-.353z"/></svg>
+						<span>💬 WhatsApp</span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Live Terminal & Calculator Interactive Scripts -->
+	<script is:inline>
+		// --- Live Workflow Terminal Animation ---
+		const logSequences = [
+			{ tag: 'agent.init', level: 'info', msg: 'Initializing Agent workflow: Lead Qualifier v2.4...' },
+			{ tag: 'db.query', level: 'info', msg: 'Fetching incoming customer inquiries from database...' },
+			{ tag: 'agent.process', level: 'working', msg: 'Processing inquiry from Sarah (SarahMitchell@dentalclinic.com)...' },
+			{ tag: 'agent.intent', level: 'info', msg: 'Intent identified: Dental scheduling, request for "BrightSmile Dental appointment".' },
+			{ tag: 'llm.call', level: 'working', msg: 'Contextualizing calendar availability for Dr. Mitchell...' },
+			{ tag: 'calendar.check', level: 'info', msg: 'Found open calendar slot: June 30 at 3:00 PM.' },
+			{ tag: 'email.draft', level: 'info', msg: 'Drafting confirmation email & pre-qual questionnaire...' },
+			{ tag: 'email.send', level: 'success', msg: 'Confirmation email dispatched. Saved front desk 45 mins.' },
+			{ tag: 'agent.sleep', level: 'info', msg: 'Workflow completed. Idle for 30s.' }
+		];
+
+		const terminalBody = document.getElementById('terminalBody');
+		let step = 0;
+
+		function getTimestamp() {
+			const now = new Date();
+			return now.toTimeString().split(' ')[0];
+		}
+
+		function appendLog() {
+			if (!terminalBody) return;
+			
+			if (step >= logSequences.length) {
+				terminalBody.innerHTML = '';
+				step = 0;
+			}
+
+			const log = logSequences[step];
+			const row = document.createElement('div');
+			row.className = 'terminal-log-row';
+			
+			let statusClass = 'info';
+			if (log.level === 'working') statusClass = 'working';
+			if (log.level === 'success') statusClass = 'success';
+
+			row.innerHTML = `
+				<span class="log-timestamp">${getTimestamp()}</span>
+				<span class="log-tag">[${log.tag}]</span>
+				<span class="log-status ${statusClass}">${log.level.toUpperCase()}</span>
+				<span class="log-message">${log.msg}</span>
+			`;
+
+			terminalBody.appendChild(row);
+			terminalBody.scrollTop = terminalBody.scrollHeight;
+			step++;
+
+			// Schedule next log
+			let delay = 1800; // Default delay
+			if (log.level === 'working') delay = 2400; // Let them see the processing
+			if (log.tag === 'agent.sleep') delay = 4500; // Pause at sleep completed
+
+			setTimeout(appendLog, delay);
+		}
+
+		// Start terminal animation after short delay
+		setTimeout(appendLog, 800);
+
+		// --- ROI Calculator Implementation ---
+		const hoursSlider = document.getElementById('hoursSlider');
+		const rateSlider = document.getElementById('rateSlider');
+		const hoursVal = document.getElementById('hoursVal');
+		const rateVal = document.getElementById('rateVal');
+		const savingsDisplay = document.getElementById('savingsDisplay');
+		const hoursReclaimedDisplay = document.getElementById('hoursReclaimedDisplay');
+
+		function calculateSavings() {
+			const hours = parseInt(hoursSlider.value);
+			const rate = parseInt(rateSlider.value);
+			
+			// Show sliders value
+			hoursVal.textContent = `${hours} hrs`;
+			rateVal.textContent = `$${rate}/hr`;
+
+			// Calculations: 4 weeks/month, AI automates ~80% of repetitive tasks
+			const hoursReclaimed = Math.round(hours * 4);
+			const monthlySavings = Math.round(hours * rate * 4 * 0.8);
+
+			// Format currency
+			const formattedSavings = new Intl.NumberFormat('en-US', {
+				style: 'currency',
+				currency: 'USD',
+				maximumFractionDigits: 0
+			}).format(monthlySavings);
+
+			// Update DOM
+			savingsDisplay.textContent = formattedSavings;
+			hoursReclaimedDisplay.textContent = `${hoursReclaimed} hrs`;
+		}
+
+		if (hoursSlider && rateSlider) {
+			hoursSlider.addEventListener('input', calculateSavings);
+			rateSlider.addEventListener('input', calculateSavings);
+			calculateSavings(); // Initial trigger
+		}
+	</script>
+</Layout>
