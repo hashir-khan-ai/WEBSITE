@@ -32,7 +32,7 @@ import Layout from '../layouts/Layout.astro';
 						</a>
 					</div>
 			
-			<!-- Interactive Live Workflow Terminal -->
+			<!-- Live Animated Workflow Terminal -->
 			<div class="terminal-wrapper">
 				<div class="terminal-header">
 					<div class="terminal-buttons">
@@ -44,7 +44,9 @@ import Layout from '../layouts/Layout.astro';
 					<div style="width: 32px;"></div>
 				</div>
 				<div class="terminal-body mono" id="terminalBody">
-					<!-- Animated workflow items will be injected here via client-side javascript -->
+					<div class="terminal-body-wrap">
+						<span id="terminalLine"></span><span class="terminal-cursor"></span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -80,7 +82,7 @@ import Layout from '../layouts/Layout.astro';
 			<div class="section-header">
 				<span class="section-eyebrow">Capabilities</span>
 				<h2>Services we provide<span class="period">.</span></h2>
-				<p>We build production-grade agentic systems tailored to your tools and goals, replacing overhead with autonomous automation.</p>
+				<p>We build production-ready agentic systems tailored to your tools and goals, replacing overhead with autonomous automation.</p>
 			</div>
 			
 			<div class="services-grid">
@@ -163,6 +165,71 @@ import Layout from '../layouts/Layout.astro';
 					<h3>24/7 Automated Response Systems</h3>
 					<p>Never miss a lead or query. Instant responses to WhatsApp, email, SMS, and website forms. Boost your lead conversions and keep customer satisfaction scores at 4.9★+.</p>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- How the Agent Thinks - Animated SVG Diagram -->
+	<section id="how-it-works" class="agent-flow-section reveal-on-scroll">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Agentic Architecture</span>
+				<h2>How the agent thinks<span class="period">.</span></h2>
+				<p>A continuous autonomous loop — trigger, reason, act, learn — powering your operations 24/7.</p>
+			</div>
+
+			<div class="agent-flow-grid">
+				<div class="agent-grid-item" data-step="1">
+					<div class="agent-node trigger">
+						<span class="agent-icon">⚡</span>
+						<span class="agent-label">Inbound Trigger</span>
+					</div>
+					<p style="font-size:0.8rem;color:var(--color-mute);margin-top:8px;">WhatsApp, Email, Webhook</p>
+				</div>
+				<div class="agent-grid-item" data-step="2">
+					<div class="agent-node reasoning">
+						<span class="agent-icon">🧠</span>
+						<span class="agent-label">AI Reasoning</span>
+					</div>
+					<p style="font-size:0.8rem;color:var(--color-mute);margin-top:8px;">Intent classification + Context</p>
+				</div>
+				<div class="agent-grid-item" data-step="3">
+					<div class="agent-node tool">
+						<span class="agent-icon">🔧</span>
+						<span class="agent-label">Tool Calls</span>
+					</div>
+					<p style="font-size:0.8rem;color:var(--color-mute);margin-top:8px;">CRM / Calendar / Database</p>
+				</div>
+				<div class="agent-grid-item" data-step="4">
+					<div class="agent-node action">
+						<span class="agent-icon">✅</span>
+						<span class="agent-label">Action + Loop</span>
+					</div>
+					<p style="font-size:0.8rem;color:var(--color-mute);margin-top:8px;">Execute → Confirm → Re-trigger</p>
+				</div>
+			</div>
+
+			<div class="svg-flow-container">
+				<svg viewBox="0 0 800 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<linearGradient id="flowGrad" x1="0" y1="0" x2="1" y2="0">
+							<stop offset="0%" stop-color="#a855f7" stop-opacity="0.1"/>
+							<stop offset="50%" stop-color="#06b6d4" stop-opacity="0.4"/>
+							<stop offset="100%" stop-color="#a855f7" stop-opacity="0.1"/>
+						</linearGradient>
+						<radialGradient id="dotGlow">
+							<stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+							<stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+						</radialGradient>
+					</defs>
+					<rect x="0" y="24" width="800" height="12" rx="6" fill="url(#flowGrad)"/>
+					<circle id="flowDot" cx="0" cy="30" r="8" fill="url(#dotGlow)">
+						<animate attributeName="cx" values="0;800" dur="4s" repeatCount="indefinite"/>
+					</circle>
+					<circle cx="0" cy="30" r="4" fill="white" opacity="0.9">
+						<animate attributeName="cx" values="0;800" dur="4s" repeatCount="indefinite"/>
+					</circle>
+				</svg>
 			</div>
 		</div>
 	</section>
@@ -405,6 +472,33 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- Try It Live - Interactive Chat Demo -->
+	<section id="demo" class="chat-demo-section reveal-on-scroll">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Live Demo</span>
+				<h2>Try it live<span class="period">.</span></h2>
+				<p>Watch how our AI qualifies a lead in real time — from inbound message to booked appointment.</p>
+			</div>
+
+			<div class="chat-widget" id="chatWidget">
+				<div class="chat-header">
+					<div class="chat-avatar">🤖</div>
+					<div class="chat-header-info">
+						<h4>AI Lead Agent</h4>
+						<p>Online — Typically replies instantly</p>
+					</div>
+				</div>
+				<div class="chat-body" id="chatBody">
+					<div class="chat-message ai" style="animation-delay:0.2s">
+						<span class="msg-tag">AI Lead Agent</span>
+						Hi! I'm Hashir's AI assistant. I can help qualify leads, check availability, and book appointments. How can I help you?
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Why Choose Us Section -->
 	<section class="section-padding reveal-on-scroll" style="background-color: var(--color-canvas); border-top: 1px solid var(--color-hairline);">
 		<div class="container">
@@ -478,6 +572,125 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- Pricing Tiers Section -->
+	<section id="pricing" class="pricing-section reveal-on-scroll" style="background-color: var(--color-canvas-soft); border-top: 1px solid var(--color-hairline);">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Pricing</span>
+				<h2>Choose your plan<span class="period">.</span></h2>
+				<p>Every plan includes a discovery call, custom integration, and 7-day free trial.</p>
+			</div>
+
+			<div class="pricing-grid">
+				<div class="pricing-card reveal-on-scroll">
+					<div class="pricing-sub">For startups & solopreneurs</div>
+					<h3>Starter</h3>
+					<div class="pricing-price">Varies</div>
+					<div class="pricing-desc">Single AI agent tailored to your needs</div>
+					<ul class="pricing-features">
+						<li>1 custom AI agent</li>
+						<li>Single workflow automation</li>
+						<li>WhatsApp / Email integration</li>
+						<li>Basic lead qualification</li>
+						<li>Email support</li>
+					</ul>
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Get Started</a>
+				</div>
+
+				<div class="pricing-card popular reveal-on-scroll">
+					<div class="pricing-badge">Most Popular</div>
+					<div class="pricing-sub">For growing teams</div>
+					<h3>Growth</h3>
+					<div class="pricing-price">Varies</div>
+					<div class="pricing-desc">Multi-agent system for full pipeline</div>
+					<ul class="pricing-features">
+						<li>3 AI agents</li>
+						<li>Full pipeline automation</li>
+						<li>WhatsApp + Email + SMS</li>
+						<li>CRM & Calendar integration</li>
+						<li>Advanced lead scoring</li>
+						<li>Priority support + training</li>
+					</ul>
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-pricing-popular">Get Started</a>
+				</div>
+
+				<div class="pricing-card reveal-on-scroll">
+					<div class="pricing-sub">For enterprises</div>
+					<h3>Enterprise</h3>
+					<div class="pricing-price">Custom</div>
+					<div class="pricing-desc">Bespoke system for your stack</div>
+					<ul class="pricing-features">
+						<li>Unlimited agents</li>
+						<li>Custom workflow engineering</li>
+						<li>All channel integrations</li>
+						<li>Custom API & database build</li>
+						<li>Dedicated support engineer</li>
+						<li>SLA & security compliance</li>
+					</ul>
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Section -->
+	<section id="faq" class="faq-section reveal-on-scroll">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">FAQ</span>
+				<h2>Frequently asked questions<span class="period">.</span></h2>
+				<p>Common questions about our AI agent services, integration process, and what to expect.</p>
+			</div>
+			<div class="faq-list">
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>How long does it take to deploy an AI agent?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>Most single-agent deployments go live within 5–7 business days after the discovery call. Multi-agent pipelines typically take 2–3 weeks depending on integration complexity.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>Do I need technical knowledge to manage the agent?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>Not at all. We handle all the setup, integration, and monitoring. You get a simple dashboard to review performance and we provide training for your team.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>Which platforms and CRMs do you integrate with?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>We support HubSpot, Salesforce, Zoho, Google Workspace, Shopify, WhatsApp Business API, Telegram, email (IMAP/SMTP), Calendly, and custom REST APIs. If your tool has an API, we can connect it.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>What happens if the AI makes a mistake?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>Every agent includes confidence thresholds — if the AI is unsure, it escalates to a human. You also get full conversation logs and can override any automated decision instantly.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>Can I cancel or change my plan anytime?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>Yes. All plans are month-to-month with no long-term contracts. You can upgrade, downgrade, or cancel at any time. We also offer a 7-day free trial so you can test risk-free.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Call to Action Band -->
 	<section id="contact" class="cta-band reveal-on-scroll">
 		<div class="container">
@@ -504,66 +717,186 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- Live Terminal & Calculator Interactive Scripts -->
+	<!-- FAQ Accordion Script -->
 	<script is:inline>
-		// --- Live Workflow Terminal Animation ---
-		const logSequences = [
-			{ tag: 'agent.init', level: 'info', msg: 'Initializing Agent workflow: Lead Qualifier v2.4...' },
-			{ tag: 'db.query', level: 'info', msg: 'Fetching incoming customer inquiries from database...' },
-			{ tag: 'agent.process', level: 'working', msg: 'Processing inquiry from Sarah (SarahMitchell@dentalclinic.com)...' },
-			{ tag: 'agent.intent', level: 'info', msg: 'Intent identified: Dental scheduling, request for "BrightSmile Dental appointment".' },
-			{ tag: 'llm.call', level: 'working', msg: 'Contextualizing calendar availability for Dr. Mitchell...' },
-			{ tag: 'calendar.check', level: 'info', msg: 'Found open calendar slot: June 30 at 3:00 PM.' },
-			{ tag: 'email.draft', level: 'info', msg: 'Drafting confirmation email & pre-qual questionnaire...' },
-			{ tag: 'email.send', level: 'success', msg: 'Confirmation email dispatched. Saved front desk 45 mins.' },
-			{ tag: 'agent.sleep', level: 'info', msg: 'Workflow completed. Idle for 30s.' }
-		];
+		(function() {
+			const faqItems = document.querySelectorAll('.faq-item');
+			faqItems.forEach(item => {
+				const btn = item.querySelector('.faq-question');
+				btn.addEventListener('click', () => {
+					const isOpen = btn.getAttribute('aria-expanded') === 'true';
+					faqItems.forEach(other => {
+						other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+						other.classList.remove('open');
+					});
+					if (!isOpen) {
+						btn.setAttribute('aria-expanded', 'true');
+						item.classList.add('open');
+					}
+				});
+			});
+		})();
+	</script>
 
-		const terminalBody = document.getElementById('terminalBody');
-		let step = 0;
+	<!-- Live Terminal, Chat Demo, Agent Flow & Calculator Scripts -->
+	<script is:inline>
+		// --- Live Workflow Terminal Animation (Typing effect) ---
+		(function() {
+			const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+			const terminalLine = document.getElementById('terminalLine');
+			const terminalBody = document.getElementById('terminalBody');
+			if (!terminalLine || !terminalBody) return;
 
-		function getTimestamp() {
-			const now = new Date();
-			return now.toTimeString().split(' ')[0];
-		}
+			const lines = [
+				{ tag: '[INIT]', cls: 'info', msg: 'Agent workflow initializing — Lead Qualifier v2.4' },
+				{ tag: '[DB]', cls: 'info', msg: 'Fetched 3 new inquiries from message queue' },
+				{ tag: '[PROCESS]', cls: 'working', msg: 'Processing: Sarah (sarah@brightsmile.com) — intent: scheduling' },
+				{ tag: '[LLM]', cls: 'working', msg: 'Classifying intent: "booking" @ 97% confidence' },
+				{ tag: '[CALENDAR]', cls: 'info', msg: 'Dr. Mitchell — open slot Jun 30, 3:00 PM' },
+				{ tag: '[CRM]', cls: 'success', msg: 'Lead created — BrightSmile Dental, score 89' },
+				{ tag: '[EMAIL]', cls: 'success', msg: 'Confirmation sent — saved 45 min of staff time' },
+				{ tag: '[LOOP]', cls: 'info', msg: 'Cycle complete. Awaiting next trigger...' }
+			];
 
-		function appendLog() {
-			if (!terminalBody) return;
-			
-			if (step >= logSequences.length) {
-				terminalBody.innerHTML = '';
-				step = 0;
+			let lineIdx = 0;
+			let charIdx = 0;
+			let isDeleting = false;
+			let isPaused = false;
+
+			function typeLine() {
+				if (isPaused) { setTimeout(typeLine, 600); isPaused = false; return; }
+				const line = lines[lineIdx];
+				const fullText = `${line.tag} [${line.cls.toUpperCase()}] ${line.msg}`;
+
+				if (!isDeleting) {
+					charIdx++;
+					terminalLine.textContent = fullText.slice(0, charIdx);
+					if (charIdx >= fullText.length) {
+						if (reducedMotion) {
+							setTimeout(nextLine, 100);
+						} else {
+							setTimeout(() => { isDeleting = true; typeLine(); }, 1800);
+						}
+						return;
+					}
+					setTimeout(typeLine, reducedMotion ? 5 : 20 + Math.random() * 30);
+				} else {
+					charIdx--;
+					terminalLine.textContent = fullText.slice(0, charIdx);
+					if (charIdx <= 0) {
+						isDeleting = false;
+						nextLine();
+						return;
+					}
+					setTimeout(typeLine, reducedMotion ? 3 : 10);
+				}
 			}
 
-			const log = logSequences[step];
-			const row = document.createElement('div');
-			row.className = 'terminal-log-row';
-			
-			let statusClass = 'info';
-			if (log.level === 'working') statusClass = 'working';
-			if (log.level === 'success') statusClass = 'success';
+			function nextLine() {
+				lineIdx = (lineIdx + 1) % lines.length;
+				charIdx = 0;
+				isPaused = lineIdx === 0;
+				setTimeout(typeLine, lineIdx === 0 ? 2500 : 400);
+			}
 
-			row.innerHTML = `
-				<span class="log-timestamp">${getTimestamp()}</span>
-				<span class="log-tag">[${log.tag}]</span>
-				<span class="log-status ${statusClass}">${log.level.toUpperCase()}</span>
-				<span class="log-message">${log.msg}</span>
-			`;
+			if (!reducedMotion) {
+				setTimeout(typeLine, 600);
+			} else {
+				const all = lines.map(l => `${l.tag} [${l.cls.toUpperCase()}] ${l.msg}`).join('  //  ');
+				terminalLine.textContent = all;
+			}
+		})();
 
-			terminalBody.appendChild(row);
-			terminalBody.scrollTop = terminalBody.scrollHeight;
-			step++;
+		// --- Agent Flow Node Pulse Animation ---
+		(function() {
+			const items = document.querySelectorAll('.agent-grid-item');
+			if (!items.length) return;
+			let current = 0;
+			const flowDot = document.getElementById('flowDot');
+			function pulseStep() {
+				items.forEach((el, i) => {
+					el.classList.remove('visible');
+					const node = el.querySelector('.agent-node');
+					if (node) node.classList.remove('pulse');
+				});
+				items.forEach((el, i) => {
+					if (i === current || i === (current + 1) % items.length) {
+						el.classList.add('visible');
+					}
+				});
+				const node = items[current].querySelector('.agent-node');
+				if (node) node.classList.add('pulse');
+				current = (current + 1) % items.length;
+			}
+			pulseStep();
+			setInterval(pulseStep, 2000);
+		})();
 
-			// Schedule next log
-			let delay = 1800; // Default delay
-			if (log.level === 'working') delay = 2400; // Let them see the processing
-			if (log.tag === 'agent.sleep') delay = 4500; // Pause at sleep completed
+		// --- Chat Demo Animation ---
+		(function() {
+			const chatBody = document.getElementById('chatBody');
+			if (!chatBody) return;
 
-			setTimeout(appendLog, delay);
-		}
+			const conversations = [
+				{ user: 'Hey! I need help with booking appointments for my dental clinic.', ai: "I'd be happy to help! Let me check — are you looking to automate patient booking, reminders, or both? Also, which calendar system do you use?" },
+				{ user: 'Both. We use Google Calendar. We get about 50 calls a day.', ai: "Great fit! I can set up an AI agent that integrates with Google Calendar, handles incoming calls/WhatsApp, books slots in real time, and sends automated reminders. Would you like me to prepare a custom quote?" },
+				{ user: "Yes, please! What's the next step?", ai: "Perfect! I'll have Hashir prepare a tailored proposal. In the meantime, would you like to book a 15-min discovery call to walk through the setup?" }
+			];
 
-		// Start terminal animation after short delay
-		setTimeout(appendLog, 800);
+			let convIdx = 0;
+			let step = 0;
+			let msgCount = 1;
+
+			function addMessage(text, type, delay) {
+				setTimeout(() => {
+					const div = document.createElement('div');
+					div.className = `chat-message ${type}`;
+					if (type === 'ai') div.innerHTML = `<span class="msg-tag">AI Lead Agent</span>${text}`;
+					else div.textContent = text;
+					chatBody.appendChild(div);
+					chatBody.scrollTop = chatBody.scrollHeight;
+				}, delay);
+			}
+
+			function showTyping(delay, duration) {
+				const typing = document.createElement('div');
+				typing.className = 'chat-typing';
+				typing.innerHTML = '<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>';
+				setTimeout(() => {
+					chatBody.appendChild(typing);
+					chatBody.scrollTop = chatBody.scrollHeight;
+					setTimeout(() => typing.classList.add('active'), 50);
+				}, delay);
+				setTimeout(() => {
+					typing.remove();
+				}, delay + duration);
+				return delay + duration;
+			}
+
+			function runConversation() {
+				convIdx = 0;
+				function playNext() {
+					if (convIdx >= conversations.length) {
+						setTimeout(() => {
+							chatBody.querySelectorAll('.chat-message, .chat-typing').forEach(el => el.remove());
+							msgCount = 1;
+							addMessage("Hi! I'm Hashir's AI assistant. I can help qualify leads, check availability, and book appointments. How can I help you?", 'ai', 300);
+							setTimeout(runConversation, 2000);
+						}, 3000);
+						return;
+					}
+					const c = conversations[convIdx];
+					addMessage(c.user, 'user', 500);
+					const tEnd = showTyping(1200, 2200);
+					addMessage(c.ai, 'ai', tEnd + 200);
+					convIdx++;
+					setTimeout(playNext, tEnd + 3000);
+				}
+				setTimeout(playNext, 3000);
+			}
+
+			setTimeout(runConversation, 4000);
+		})();
 
 		// --- ROI Calculator Implementation ---
 		const hoursSlider = document.getElementById('hoursSlider');
@@ -577,22 +910,18 @@ import Layout from '../layouts/Layout.astro';
 			const hours = parseInt(hoursSlider.value);
 			const rate = parseInt(rateSlider.value);
 			
-			// Show sliders value
 			hoursVal.textContent = `${hours} hrs`;
 			rateVal.textContent = `$${rate}/hr`;
 
-			// Calculations: 4 weeks/month, AI automates ~80% of repetitive tasks
 			const hoursReclaimed = Math.round(hours * 4);
 			const monthlySavings = Math.round(hours * rate * 4 * 0.8);
 
-			// Format currency
 			const formattedSavings = new Intl.NumberFormat('en-US', {
 				style: 'currency',
 				currency: 'USD',
 				maximumFractionDigits: 0
 			}).format(monthlySavings);
 
-			// Update DOM
 			savingsDisplay.textContent = formattedSavings;
 			hoursReclaimedDisplay.textContent = `${hoursReclaimed} hrs`;
 		}
@@ -600,7 +929,7 @@ import Layout from '../layouts/Layout.astro';
 		if (hoursSlider && rateSlider) {
 			hoursSlider.addEventListener('input', calculateSavings);
 			rateSlider.addEventListener('input', calculateSavings);
-			calculateSavings(); // Initial trigger
+			calculateSavings();
 		}
 	</script>
 </Layout>
