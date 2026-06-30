@@ -76,7 +76,7 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- Services Section -->
+	<!-- Services Section (Preview) -->
 	<section id="services" class="section-padding reveal-on-scroll">
 		<div class="container">
 			<div class="section-header">
@@ -85,86 +85,34 @@ import Layout from '../layouts/Layout.astro';
 				<p>We build production-ready agentic systems tailored to your tools and goals, replacing overhead with autonomous automation.</p>
 			</div>
 			
-			<div class="services-grid">
-				<!-- Service 1 -->
+			<div class="services-grid services-preview-grid">
 				<div class="card-marketing reveal-on-scroll">
 					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-						</svg>
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
 					</div>
 					<span class="card-meta-tag mono">AGENT_TYPE_01 // HELP_DESK</span>
 					<h3>AI Customer Support Chatbots</h3>
 					<p>Intelligent, context-aware bots trained on your internal documentation to resolve customer issues and guide inquiries 24/7 without manual support overhead.</p>
 				</div>
-				
-				<!-- Service 2 -->
 				<div class="card-marketing reveal-on-scroll">
 					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
-						</svg>
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
 					</div>
 					<span class="card-meta-tag mono">AGENT_TYPE_02 // LEADS</span>
 					<h3>Lead Qualification & Management</h3>
 					<p>Automate incoming prospect filtering. Qualify prospects by intent, enrich company profile info via APIs, and automatically distribute leads to sales agents in your CRM.</p>
 				</div>
-				
-				<!-- Service 3 -->
 				<div class="card-marketing reveal-on-scroll">
 					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-							<line x1="16" y1="2" x2="16" y2="6"></line>
-							<line x1="8" y1="2" x2="8" y2="6"></line>
-							<line x1="3" y1="10" x2="21" y2="10"></line>
-						</svg>
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
 					</div>
 					<span class="card-meta-tag mono">AGENT_TYPE_03 // CALENDAR</span>
 					<h3>Appointment Scheduling Automation</h3>
 					<p>End the email back-and-forth. Our agents resolve availability conflicts, propose slots, and automatically book meetings in Calendly or Google Calendar directly inside chats.</p>
 				</div>
-				
-				<!-- Service 4 -->
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<polyline points="16 18 22 12 16 6"></polyline>
-							<polyline points="8 6 2 12 8 18"></polyline>
-						</svg>
-					</div>
-					<span class="card-meta-tag mono">AGENT_TYPE_04 // INTEGRATION</span>
-					<h3>Workflow & API Integrations</h3>
-					<p>Glue your systems together. We build custom API bridges connecting webhooks, databases, CRMs, and messaging apps to establish frictionless data flows.</p>
-				</div>
-				
-				<!-- Service 5 -->
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-							<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-							<line x1="6" y1="6" x2="6.01" y2="6"></line>
-							<line x1="6" y1="18" x2="6.01" y2="18"></line>
-						</svg>
-					</div>
-					<span class="card-meta-tag mono">AGENT_TYPE_05 // CUSTOM</span>
-					<h3>Custom AI Assistant Development</h3>
-					<p>Bespoke assistant systems optimized to perform specialized business logic: document summarization, PDF report generation, status checking, or translation.</p>
-				</div>
-				
-				<!-- Service 6 -->
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<circle cx="12" cy="12" r="10"></circle>
-							<polyline points="12 6 12 12 16 14"></polyline>
-						</svg>
-					</div>
-					<span class="card-meta-tag mono">AGENT_TYPE_06 // TRIGGER</span>
-					<h3>24/7 Automated Response Systems</h3>
-					<p>Never miss a lead or query. Instant responses to WhatsApp, email, SMS, and website forms. Boost your lead conversions and keep customer satisfaction scores at 4.9★+.</p>
-				</div>
+			</div>
+			<div class="preview-cta">
+				<a href="/services" class="btn btn-secondary">View all services <span style="display:inline-block;margin-left:4px;">→</span></a>
 			</div>
 		</div>
 	</section>
@@ -234,7 +182,7 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- Case Studies Section (Dark Polarity Flip) -->
+	<!-- Case Studies Section (Dark Polarity Flip — Preview) -->
 	<section id="projects" class="section-padding showcase-band-dark reveal-on-scroll">
 		<div class="container">
 			<div class="section-header">
@@ -243,8 +191,7 @@ import Layout from '../layouts/Layout.astro';
 				<p>See how our tailored AI Agent systems solve real bottleneck problems and deliver measurable ROI to businesses.</p>
 			</div>
 			
-			<div class="case-studies-container">
-				<!-- Project 1 -->
+			<div class="case-studies-preview-grid">
 				<div class="case-study-card reveal-on-scroll">
 					<div class="case-study-top">
 						<div class="case-study-title-area">
@@ -253,34 +200,14 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 						<div class="case-study-rating">★★★★★</div>
 					</div>
-					
-					<div class="case-study-sections">
-						<div class="case-study-section">
-							<h4>Problem</h4>
-							<p>Overwhelmed with appointment inquiries, insurance questions, and after-hours calls. Front desk staff was spending 3+ hours daily on repetitive phone calls.</p>
-						</div>
-						<div class="case-study-section">
-							<h4>Solution</h4>
-							<p>Deployed a custom AI conversational chatbot integrated with the clinic's calendar and scheduling tool for booking and FAQ resolution.</p>
-						</div>
-					</div>
-					
 					<div class="case-study-results">
-						<h4>Results</h4>
 						<div class="results-tags">
 							<span class="result-tag-pill">70% Fewer Phone Calls</span>
 							<span class="result-tag-pill">15+ Hours Saved/Week</span>
 							<span class="result-tag-pill">Patient Satisfaction +40%</span>
 						</div>
 					</div>
-					
-					<div class="case-study-quote">
-						"This AI system transformed our front desk. Patients love booking at midnight, and my staff finally focuses on actual dental care. Best investment we've made."
-						<div class="case-study-quote-author">— Dr. Sarah Mitchell, Clinic Director</div>
-					</div>
 				</div>
-
-				<!-- Project 2 -->
 				<div class="case-study-card reveal-on-scroll">
 					<div class="case-study-top">
 						<div class="case-study-title-area">
@@ -289,141 +216,17 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 						<div class="case-study-rating">★★★★★</div>
 					</div>
-					
-					<div class="case-study-sections">
-						<div class="case-study-section">
-							<h4>Problem</h4>
-							<p>200+ daily inquiries regarding visa types, documentation, and case status. Two full-time support staff were occupied just answering repetitive qualification questions.</p>
-						</div>
-						<div class="case-study-section">
-							<h4>Solution</h4>
-							<p>Created an AI Immigration assistant that reviews applicant details, provides customized checklists, and traces application timelines.</p>
-						</div>
-					</div>
-					
 					<div class="case-study-results">
-						<h4>Results</h4>
 						<div class="results-tags">
 							<span class="result-tag-pill">85% Inquiries Handled by AI</span>
 							<span class="result-tag-pill">Lead Conversion +60%</span>
 							<span class="result-tag-pill">$8,000/Month Saved</span>
 						</div>
 					</div>
-					
-					<div class="case-study-quote">
-						"We were drowning in inquiries. Now our AI handles everything from 'What's an I-485?' to complex case timelines. Revenue up 45% in 3 months."
-						<div class="case-study-quote-author">— James Chen, Managing Partner</div>
-					</div>
 				</div>
-
-				<!-- Project 3 -->
-				<div class="case-study-card reveal-on-scroll">
-					<div class="case-study-top">
-						<div class="case-study-title-area">
-							<h3>Real Estate Agentic Pipeline</h3>
-							<div class="case-study-meta mono">Lisa Rodriguez | Broker / Owner | Metro Homes Group | April 2026</div>
-						</div>
-						<div class="case-study-rating">★★★★★</div>
-					</div>
-					
-					<div class="case-study-sections">
-						<div class="case-study-section">
-							<h4>Problem</h4>
-							<p>Missing hot buyer leads after office hours. Real estate agents were spending 2+ hours daily trying to reach and pre-qualify inbound callers.</p>
-						</div>
-						<div class="case-study-section">
-							<h4>Solution</h4>
-							<p>Set up an AI lead qualification agent connected to property records, immediately following up and pre-qualifying leads via WhatsApp/SMS.</p>
-						</div>
-					</div>
-					
-					<div class="case-study-results">
-						<h4>Results</h4>
-						<div class="results-tags">
-							<span class="result-tag-pill">Zero Missed Leads</span>
-							<span class="result-tag-pill">73% Leads Pre-Qualified</span>
-							<span class="result-tag-pill">+12 Deals Closed in Q2</span>
-						</div>
-					</div>
-					
-					<div class="case-study-quote">
-						"Our AI never sleeps. I wake up to 5 qualified appointments booked overnight. This is how real estate works in 2026."
-						<div class="case-study-quote-author">— Lisa Rodriguez, Broker / Owner</div>
-					</div>
-				</div>
-
-				<!-- Project 4 -->
-				<div class="case-study-card reveal-on-scroll">
-					<div class="case-study-top">
-						<div class="case-study-title-area">
-							<h3>E-Commerce Order Automations</h3>
-							<div class="case-study-meta mono">Marcus Thompson | CEO | FitGear Pro | March 2026</div>
-						</div>
-						<div class="case-study-rating">★★★★★</div>
-					</div>
-					
-					<div class="case-study-sections">
-						<div class="case-study-section">
-							<h4>Problem</h4>
-							<p>500+ daily customer support tickets regarding order status, returns, and catalog questions. Response time dragged to 24+ hours, hurting satisfaction.</p>
-						</div>
-						<div class="case-study-section">
-							<h4>Solution</h4>
-							<p>Developed an AI e-commerce agent integrated with Shopify for automated package tracking, instant returns processing, and catalog recommendations.</p>
-						</div>
-					</div>
-					
-					<div class="case-study-results">
-						<h4>Results</h4>
-						<div class="results-tags">
-							<span class="result-tag-pill">90% Support Tickets Resolved</span>
-							<span class="result-tag-pill">&lt;1 Minute Response Time</span>
-							<span class="result-tag-pill">CSAT Rating 4.9★</span>
-							<span class="result-tag-pill">+$18,000/Month Upsells</span>
-						</div>
-					</div>
-					
-					<div class="case-study-quote">
-						"Our AI knows our catalog better than my longest employee. Support costs dropped 70% while satisfaction went up."
-						<div class="case-study-quote-author">— Marcus Thompson, CEO</div>
-					</div>
-				</div>
-
-				<!-- Project 5 -->
-				<div class="case-study-card reveal-on-scroll">
-					<div class="case-study-top">
-						<div class="case-study-title-area">
-							<h3>Fitness Studio Booking Sync</h3>
-							<div class="case-study-meta mono">Amanda Foster | Studio Manager | Pulse Fitness | February 2026</div>
-						</div>
-						<div class="case-study-rating">★★★★★</div>
-					</div>
-					
-					<div class="case-study-sections">
-						<div class="case-study-section">
-							<h4>Problem</h4>
-							<p>Heavy intake of calls for class bookings, member questions, and rescheduling. Juggling booking conflict issues distracted front desk check-in staff.</p>
-						</div>
-						<div class="case-study-section">
-							<h4>Solution</h4>
-							<p>Implemented an AI booking agent connected to trainer schedules, coordinating booking updates and sending automated reminders.</p>
-						</div>
-					</div>
-					
-					<div class="case-study-results">
-						<h4>Results</h4>
-						<div class="results-tags">
-							<span class="result-tag-pill">Class Bookings +85%</span>
-							<span class="result-tag-pill">40% Convert to Members</span>
-							<span class="result-tag-pill">No-Shows Down to 8%</span>
-						</div>
-					</div>
-					
-					<div class="case-study-quote">
-						"Our AI books classes while we sleep. I see 12 new bookings at 6 AM. We're opening a second location because of this growth."
-						<div class="case-study-quote-author">— Amanda Foster, Studio Manager</div>
-					</div>
-				</div>
+			</div>
+			<div class="preview-cta">
+				<a href="/projects" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.15);color:white;">View all projects <span style="display:inline-block;margin-left:4px;">→</span></a>
 			</div>
 		</div>
 	</section>
