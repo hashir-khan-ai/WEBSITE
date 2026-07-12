@@ -2,69 +2,567 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Services | Hashir Khan | AI Automation & Agentic Workflows" description="Production-ready AI agent services: chatbots, lead qualification, scheduling, API integrations, custom assistants, and 24/7 response systems.">
+<Layout title="AI Automation Services | Hashir Khan | Custom AI Agents & Workflows" description="Production-grade AI agent services: customer support chatbots, lead qualification, appointment scheduling, workflow integrations, and 24/7 response systems for SMEs." canonical="https://hashir.ai/services">
 	<section class="page-hero">
 		<div class="container">
 			<h1>Services we provide<span class="period">.</span></h1>
-			<p>We build production-ready agentic systems tailored to your tools and goals, replacing overhead with autonomous automation.</p>
+			<p>We build production-ready agentic systems tailored to your tools and goals — from a single chatbot to a full multi-agent pipeline.</p>
 		</div>
 	</section>
 
-	<section class="section-padding">
+	<!-- Service 1: AI Customer Support -->
+	<section id="support" class="section-padding reveal-on-scroll">
 		<div class="container">
-			<div class="services-grid">
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-					</div>
+			<div class="service-detail">
+				<div class="service-detail-header">
 					<span class="card-meta-tag mono">AGENT_TYPE_01 // HELP_DESK</span>
-					<h3>AI Customer Support Chatbots</h3>
-					<p>Intelligent, context-aware bots trained on your internal documentation to resolve customer issues and guide inquiries 24/7 without manual support overhead.</p>
+					<h2>AI Customer Support Chatbots</h2>
+				</div>
+				
+				<div class="service-problem-solution">
+					<div class="service-block">
+						<h3 class="service-block-label">The problem</h3>
+						<p>Your support team spends 70% of their time answering the same questions — pricing, hours, availability, basic troubleshooting. Every repeat inquiry burns staff hours that could go toward complex cases or revenue-generating work. Meanwhile, customers expect instant answers at 2 AM.</p>
+					</div>
+					<div class="service-block">
+						<h3 class="service-block-label">What we build</h3>
+						<p>A context-aware AI agent trained on your documentation, FAQs, product specs, and internal knowledge base. It resolves inquiries autonomously in under 5 seconds, handing off only edge cases to your human team with full context included.</p>
+					</div>
 				</div>
 
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+				<div class="service-benefits">
+					<h3>Key benefits</h3>
+					<div class="benefits-grid">
+						<div class="benefit-chip">75–85% auto-resolution rate</div>
+						<div class="benefit-chip">Under 5s response time</div>
+						<div class="benefit-chip">24/7 coverage, no shifts</div>
+						<div class="benefit-chip">Consistent brand voice</div>
+						<div class="benefit-chip">Full conversation logs</div>
+						<div class="benefit-chip">Instant human handoff</div>
 					</div>
+				</div>
+
+				<div class="service-features">
+					<h3>Capabilities</h3>
+					<ul>
+						<li>Multi-channel deployment: website widget, WhatsApp, email, Telegram</li>
+						<li>Knowledge base ingestion from Notion, Google Docs, PDFs, or Confluence</li>
+						<li>Sentiment detection and priority escalation routing</li>
+						<li>Multilingual support (English, Urdu, Arabic, and 20+ languages)</li>
+						<li>Order lookup, ticket status, and account management via API</li>
+					</ul>
+				</div>
+
+				<div class="service-integrations">
+					<h3>Integrations</h3>
+					<div class="integrations-tags">
+						<span>WhatsApp Business API</span>
+						<span>Telegram</span>
+						<span>Slack</span>
+						<span>HubSpot</span>
+						<span>Salesforce</span>
+						<span>Zendesk</span>
+						<span>Intercom</span>
+						<span>Custom REST APIs</span>
+					</div>
+				</div>
+
+				<div class="service-ideal-client">
+					<h3>Ideal for</h3>
+					<p>Ecommerce stores with high inquiry volume, SaaS companies with tier-1 support overhead, healthcare clinics managing appointment queries, and any business receiving 50+ repetitive support messages per day.</p>
+				</div>
+
+				<div class="service-workflow">
+					<h3>How it works</h3>
+					<div class="workflow-steps">
+						<div class="wf-step">
+							<span class="wf-step-num">1</span>
+							<span>Customer sends inquiry via WhatsApp or web chat</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">2</span>
+							<span>Agent classifies intent (billing, support, sales) with 95%+ confidence</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">3</span>
+							<span>Agent fetches answer from knowledge base or API</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">4</span>
+							<span>Response delivered in under 5 seconds; low-confidence cases escalate to human</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-cta">
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Book a discovery call</a>
+					<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service 2: Lead Qualification -->
+	<section id="leads" class="section-padding reveal-on-scroll" style="border-top:1px solid var(--color-hairline);">
+		<div class="container">
+			<div class="service-detail">
+				<div class="service-detail-header">
 					<span class="card-meta-tag mono">AGENT_TYPE_02 // LEADS</span>
-					<h3>Lead Qualification & Management</h3>
-					<p>Automate incoming prospect filtering. Qualify prospects by intent, enrich company profile info via APIs, and automatically distribute leads to sales agents in your CRM.</p>
+					<h2>Lead Qualification & Management</h2>
+				</div>
+				
+				<div class="service-problem-solution">
+					<div class="service-block">
+						<h3 class="service-block-label">The problem</h3>
+						<p>Your sales team spends hours manually filtering inbound leads — separating serious buyers from tire-kickers, enriching company profiles, logging data into the CRM. By the time a qualified lead gets followed up, they've already gone with a competitor.</p>
+					</div>
+					<div class="service-block">
+						<h3 class="service-block-label">What we build</h3>
+						<p>An autonomous lead qualification agent that ingests prospects from all channels, enriches profiles via company APIs and social data, scores purchase intent, and routes hot leads directly to your sales queue — all before you've finished your morning coffee.</p>
+					</div>
 				</div>
 
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+				<div class="service-benefits">
+					<h3>Key benefits</h3>
+					<div class="benefits-grid">
+						<div class="benefit-chip">Lead response under 60s</div>
+						<div class="benefit-chip">92%+ qualification accuracy</div>
+						<div class="benefit-chip">3x faster sales cycle</div>
+						<div class="benefit-chip">Eliminate manual CRM entry</div>
+						<div class="benefit-chip">Hot lead alerts in Slack</div>
+						<div class="benefit-chip">A/B testable scoring models</div>
 					</div>
+				</div>
+
+				<div class="service-features">
+					<h3>Capabilities</h3>
+					<ul>
+						<li>Multi-source ingestion: website forms, WhatsApp, email, LinkedIn, landing pages</li>
+						<li>Company enrichment via Clearbit, Crunchbase, or custom API sources</li>
+						<li>Intent scoring based on message content, page visits, and response patterns</li>
+						<li>Automatic CRM insertion (HubSpot, Salesforce, Zoho, custom)</li>
+						<li>Slack/email notifications for hot leads with full context</li>
+					</ul>
+				</div>
+
+				<div class="service-integrations">
+					<h3>Integrations</h3>
+					<div class="integrations-tags">
+						<span>HubSpot</span>
+						<span>Salesforce</span>
+						<span>Zoho CRM</span>
+						<span>Slack</span>
+						<span>WhatsApp Business API</span>
+						<span>Calendly</span>
+						<span>Clearbit</span>
+						<span>LinkedIn API</span>
+					</div>
+				</div>
+
+				<div class="service-ideal-client">
+					<h3>Ideal for</h3>
+					<p>B2B service firms (consulting, agencies, law firms), real estate agencies managing high-volume inquiries, education institutions processing applications, and any business where lead response time directly impacts conversion rate.</p>
+				</div>
+
+				<div class="service-workflow">
+					<h3>How it works</h3>
+					<div class="workflow-steps">
+						<div class="wf-step">
+							<span class="wf-step-num">1</span>
+							<span>Prospect messages via WhatsApp, web form, or email</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">2</span>
+							<span>Agent classifies intent, extracts company info, enriches profile</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">3</span>
+							<span>Lead scored and routed — hot leads trigger Slack alert + CRM entry</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">4</span>
+							<span>Sales team receives qualified lead with full context, books call via Calendly</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-cta">
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Book a discovery call</a>
+					<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service 3: Appointment Scheduling -->
+	<section id="scheduling" class="section-padding reveal-on-scroll" style="border-top:1px solid var(--color-hairline);">
+		<div class="container">
+			<div class="service-detail">
+				<div class="service-detail-header">
 					<span class="card-meta-tag mono">AGENT_TYPE_03 // CALENDAR</span>
-					<h3>Appointment Scheduling Automation</h3>
-					<p>End the email back-and-forth. Our agents resolve availability conflicts, propose slots, and automatically book meetings in Calendly or Google Calendar directly inside chats.</p>
+					<h2>Appointment Scheduling Automation</h2>
+				</div>
+				
+				<div class="service-problem-solution">
+					<div class="service-block">
+						<h3 class="service-block-label">The problem</h3>
+						<p>Every missed call is a lost booking. Every email back-and-forth to find a mutual time slot burns 10+ minutes of staff time. And 30% of booked appointments result in no-shows because there's no automated reminder system in place.</p>
+					</div>
+					<div class="service-block">
+						<h3 class="service-block-label">What we build</h3>
+						<p>An AI scheduling agent that lives inside WhatsApp, your website, or phone system — it checks real-time calendar availability, proposes slots, resolves conflicts, books appointments directly into Google Calendar or Calendly, sends reminders, and handles rescheduling.</p>
+					</div>
 				</div>
 
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+				<div class="service-benefits">
+					<h3>Key benefits</h3>
+					<div class="benefits-grid">
+						<div class="benefit-chip">No-show reduction by 40%+</div>
+						<div class="benefit-chip">Self-serve booking 24/7</div>
+						<div class="benefit-chip">3min average booking time</div>
+						<div class="benefit-chip">Eliminate phone tag</div>
+						<div class="benefit-chip">Auto-reminders via SMS/WhatsApp</div>
+						<div class="benefit-chip">Multi-calendar sync</div>
 					</div>
+				</div>
+
+				<div class="service-features">
+					<h3>Capabilities</h3>
+					<ul>
+						<li>Natural language booking — "I need an appointment next Tuesday afternoon"</li>
+						<li>Real-time calendar sync with Google Calendar, Outlook, Calendly</li>
+						<li>Multi-provider scheduling with conflict resolution</li>
+						<li>Automated reminders at 24hr, 2hr, and 15min before appointment</li>
+						<li>Rescheduling and cancellation with calendar auto-update</li>
+						<li>Post-appointment follow-up and feedback collection</li>
+					</ul>
+				</div>
+
+				<div class="service-integrations">
+					<h3>Integrations</h3>
+					<div class="integrations-tags">
+						<span>Google Calendar</span>
+						<span>Outlook Calendar</span>
+						<span>Calendly</span>
+						<span>WhatsApp Business API</span>
+						<span>Twilio SMS</span>
+						<span>HubSpot</span>
+						<span>Salesforce</span>
+						<span>Zapier</span>
+					</div>
+				</div>
+
+				<div class="service-ideal-client">
+					<h3>Ideal for</h3>
+					<p>Dental and medical clinics, law firms, real estate agents, consultants, service businesses, and any operation where appointment booking is a high-volume, manual bottleneck.</p>
+				</div>
+
+				<div class="service-workflow">
+					<h3>How it works</h3>
+					<div class="workflow-steps">
+						<div class="wf-step">
+							<span class="wf-step-num">1</span>
+							<span>Client messages "I need to book a consultation" on WhatsApp</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">2</span>
+							<span>Agent checks Google Calendar for available slots across providers</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">3</span>
+							<span>Client picks a time; agent books it and sends calendar invite</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">4</span>
+							<span>Automated reminder sequence sent; CRM updated with new appointment</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-cta">
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Book a discovery call</a>
+					<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service 4: Workflow & API Integrations -->
+	<section id="integrations" class="section-padding reveal-on-scroll" style="border-top:1px solid var(--color-hairline);">
+		<div class="container">
+			<div class="service-detail">
+				<div class="service-detail-header">
 					<span class="card-meta-tag mono">AGENT_TYPE_04 // INTEGRATION</span>
-					<h3>Workflow & API Integrations</h3>
-					<p>Glue your systems together. We build custom API bridges connecting webhooks, databases, CRMs, and messaging apps to establish frictionless data flows.</p>
+					<h2>Workflow & API Integrations</h2>
+				</div>
+				
+				<div class="service-problem-solution">
+					<div class="service-block">
+						<h3 class="service-block-label">The problem</h3>
+						<p>Your tools don't talk to each other. Leads come in on WhatsApp but your CRM is separate. Invoices live in Stripe but accounting uses a different system. Every manual data transfer costs time and introduces errors.</p>
+					</div>
+					<div class="service-block">
+						<h3 class="service-block-label">What we build</h3>
+						<p>Custom API bridges and n8n-powered automation pipelines that connect your entire stack — CRMs, payment processors, calendars, email, Slack, databases — into a unified, event-driven workflow. Data flows automatically between systems with error handling and audit logging.</p>
+					</div>
 				</div>
 
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+				<div class="service-benefits">
+					<h3>Key benefits</h3>
+					<div class="benefits-grid">
+						<div class="benefit-chip">Eliminate manual data entry</div>
+						<div class="benefit-chip">Real-time sync across tools</div>
+						<div class="benefit-chip">Error handling built-in</div>
+						<div class="benefit-chip">Audit trail for every action</div>
+						<div class="benefit-chip">Scalable to any volume</div>
+						<div class="benefit-chip">Custom API endpoints</div>
 					</div>
+				</div>
+
+				<div class="service-features">
+					<h3>Capabilities</h3>
+					<ul>
+						<li>Webhook ingestion and transformation pipelines</li>
+						<li>n8n workflow orchestration with error recovery</li>
+						<li>Custom REST API development for legacy system integration</li>
+						<li>Database sync between PostgreSQL, Supabase, and external sources</li>
+						<li>Slack/email notification triggers based on business events</li>
+						<li>Data transformation, enrichment, and validation layers</li>
+					</ul>
+				</div>
+
+				<div class="service-integrations">
+					<h3>Integrations</h3>
+					<div class="integrations-tags">
+						<span>n8n</span>
+						<span>Supabase</span>
+						<span>PostgreSQL</span>
+						<span>Stripe</span>
+						<span>Google Workspace</span>
+						<span>Slack</span>
+						<span>Notion</span>
+						<span>REST APIs</span>
+						<span>Webhooks</span>
+						<span>Docker</span>
+					</div>
+				</div>
+
+				<div class="service-ideal-client">
+					<h3>Ideal for</h3>
+					<p>Growing businesses with 5+ disconnected tools, operations teams drowning in manual data transfer, and companies preparing to scale who need automated backend processes before adding headcount.</p>
+				</div>
+
+				<div class="service-workflow">
+					<h3>How it works</h3>
+					<div class="workflow-steps">
+						<div class="wf-step">
+							<span class="wf-step-num">1</span>
+							<span>We audit your current tool stack and map data flow requirements</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">2</span>
+							<span>Custom n8n pipelines built with error handling and retry logic</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">3</span>
+							<span>Pipelines deployed to production with monitoring dashboards</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">4</span>
+							<span>Ongoing monitoring, alerting, and optimization as data volumes grow</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-cta">
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Book a discovery call</a>
+					<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service 5: Custom AI Assistants -->
+	<section id="custom" class="section-padding reveal-on-scroll" style="border-top:1px solid var(--color-hairline);">
+		<div class="container">
+			<div class="service-detail">
+				<div class="service-detail-header">
 					<span class="card-meta-tag mono">AGENT_TYPE_05 // CUSTOM</span>
-					<h3>Custom AI Assistant Development</h3>
-					<p>Bespoke assistant systems optimized to perform specialized business logic: document summarization, PDF report generation, status checking, or translation.</p>
+					<h2>Custom AI Assistant Development</h2>
+				</div>
+				
+				<div class="service-problem-solution">
+					<div class="service-block">
+						<h3 class="service-block-label">The problem</h3>
+						<p>Off-the-shelf AI tools can't handle your specific business logic. You need an assistant that understands your proprietary data formats, generates reports in your template, translates industry-specific terminology, or integrates with your internal tools.</p>
+					</div>
+					<div class="service-block">
+						<h3 class="service-block-label">What we build</h3>
+						<p>Bespoke AI assistants optimized for your specific business function — document summarization, PDF report generation, data extraction, translation with domain terminology, compliance checking, or any custom workflow you can describe.</p>
+					</div>
 				</div>
 
-				<div class="card-marketing reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+				<div class="service-benefits">
+					<h3>Key benefits</h3>
+					<div class="benefits-grid">
+						<div class="benefit-chip">Built for your exact use case</div>
+						<div class="benefit-chip">Domain-specific accuracy</div>
+						<div class="benefit-chip">Runs on your infrastructure</div>
+						<div class="benefit-chip">Customizable outputs</div>
+						<div class="benefit-chip">API-first design</div>
+						<div class="benefit-chip">Evolves with your business</div>
 					</div>
+				</div>
+
+				<div class="service-features">
+					<h3>Capabilities</h3>
+					<ul>
+						<li>Document analysis and structured data extraction from PDFs, images, scans</li>
+						<li>Automated report generation in PDF/CSV/JSON formats</li>
+						<li>Multi-language translation with industry terminology preservation</li>
+						<li>Compliance checking against regulatory documents (HIPAA, GDPR, SEC)</li>
+						<li>Internal knowledge base Q&A trained on your proprietary data</li>
+						<li>Custom tool-calling agents with deterministic business logic</li>
+					</ul>
+				</div>
+
+				<div class="service-integrations">
+					<h3>Integrations</h3>
+					<div class="integrations-tags">
+						<span>OpenAI</span>
+						<span>Claude</span>
+						<span>Gemini</span>
+						<span>OpenRouter</span>
+						<span>Supabase</span>
+						<span>PostgreSQL</span>
+						<span>Docker</span>
+						<span>Custom APIs</span>
+					</div>
+				</div>
+
+				<div class="service-ideal-client">
+					<h3>Ideal for</h3>
+					<p>Healthcare organizations needing HIPAA-compliant document processing, legal firms requiring contract analysis, financial services needing report automation, and any business with unique domain-specific AI needs not met by general-purpose tools.</p>
+				</div>
+
+				<div class="service-workflow">
+					<h3>How it works</h3>
+					<div class="workflow-steps">
+						<div class="wf-step">
+							<span class="wf-step-num">1</span>
+							<span>We document your specific use case, data sources, and output requirements</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">2</span>
+							<span>Custom agent architecture designed with appropriate LLM + tooling</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">3</span>
+							<span>Prototype built and tested against your real data with accuracy benchmarks</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">4</span>
+							<span>Production deployment with monitoring, logging, and iteration pipeline</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-cta">
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Book a discovery call</a>
+					<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service 6: 24/7 Response Systems -->
+	<section id="247" class="section-padding reveal-on-scroll" style="border-top:1px solid var(--color-hairline);">
+		<div class="container">
+			<div class="service-detail">
+				<div class="service-detail-header">
 					<span class="card-meta-tag mono">AGENT_TYPE_06 // TRIGGER</span>
-					<h3>24/7 Automated Response Systems</h3>
-					<p>Never miss a lead or query. Instant responses to WhatsApp, email, SMS, and website forms. Boost your lead conversions and keep customer satisfaction scores at 4.9★+.</p>
+					<h2>24/7 Automated Response Systems</h2>
+				</div>
+				
+				<div class="service-problem-solution">
+					<div class="service-block">
+						<h3 class="service-block-label">The problem</h3>
+						<p>Every hour your business is closed, you're losing leads. Studies show that responding to a lead within 5 minutes increases conversion by 900% — but most businesses take hours or days. Meanwhile, competitors with automated responses capture the market while you sleep.</p>
+					</div>
+					<div class="service-block">
+						<h3 class="service-block-label">What we build</h3>
+						<p>An always-on response layer across WhatsApp, email, SMS, and web forms that acknowledges, qualifies, and responds to every inbound message instantly. No lead goes unanswered, no inquiry falls through the cracks — even at 3 AM on a Sunday.</p>
+					</div>
+				</div>
+
+				<div class="service-benefits">
+					<h3>Key benefits</h3>
+					<div class="benefits-grid">
+						<div class="benefit-chip">Instant lead response</div>
+						<div class="benefit-chip">Zero missed inquiries</div>
+						<div class="benefit-chip">900% conversion improvement</div>
+						<div class="benefit-chip">Multi-channel coverage</div>
+						<div class="benefit-chip">Automatic after-hours triage</div>
+						<div class="benefit-chip">Escalation when needed</div>
+					</div>
+				</div>
+
+				<div class="service-features">
+					<h3>Capabilities</h3>
+					<ul>
+						<li>Instant auto-reply on WhatsApp, email, SMS, and web forms</li>
+						<li>Smart triage — simple queries handled, complex ones logged for business hours</li>
+						<li>Lead capture and qualification before human follow-up</li>
+						<li>After-hours mode with clear expectations and booking options</li>
+						<li>Full inquiry log with CRM sync for morning review</li>
+						<li>Escalation rules based on urgency keywords and sender profile</li>
+					</ul>
+				</div>
+
+				<div class="service-integrations">
+					<h3>Integrations</h3>
+					<div class="integrations-tags">
+						<span>WhatsApp Business API</span>
+						<span>Twilio SMS</span>
+						<span>Email (IMAP/SMTP)</span>
+						<span>HubSpot</span>
+						<span>Salesforce</span>
+						<span>Slack</span>
+						<span>Calendly</span>
+						<span>Custom Webhooks</span>
+					</div>
+				</div>
+
+				<div class="service-ideal-client">
+					<h3>Ideal for</h3>
+					<p>Service businesses that receive inquiries outside business hours, high-competition markets where response speed is a differentiator, and any business that can't afford 24/7 human staff but can't afford to miss leads either.</p>
+				</div>
+
+				<div class="service-workflow">
+					<h3>How it works</h3>
+					<div class="workflow-steps">
+						<div class="wf-step">
+							<span class="wf-step-num">1</span>
+							<span>Customer sends message via any channel at any hour</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">2</span>
+							<span>AI agent responds instantly, captures inquiry details</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">3</span>
+							<span>Lead qualified and entered into CRM with full conversation log</span>
+						</div>
+						<div class="wf-step">
+							<span class="wf-step-num">4</span>
+							<span>Team receives morning digest of all after-hours activity with priorities</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-cta">
+					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Book a discovery call</a>
+					<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
 				</div>
 			</div>
 		</div>

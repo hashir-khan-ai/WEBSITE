@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Projects | Hashir Khan | AI Automation & Agentic Workflows" description="Real-world AI agent deployments: lead enrichment, appointment scheduling, 24/7 customer support, and custom assistant integrations.">
+<Layout title="Case Studies | Hashir Khan | AI Automation Projects & Results" description="Real-world AI agent deployments and demo case studies: lead enrichment, appointment scheduling, 24/7 support, and custom integrations. See measurable results." canonical="https://hashir.ai/projects">
 	<section class="page-hero">
 		<div class="container">
 			<h1>Recent case studies<span class="period">.</span></h1>
@@ -12,48 +12,158 @@ import Layout from '../layouts/Layout.astro';
 
 	<section class="section-padding">
 		<div class="container">
-			<div class="projects-grid">
-				<div class="card-marketing project-card reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+			<div class="projects-grid-full">
+				
+				<!-- Case Study 1 -->
+				<article class="case-study-card-full reveal-on-scroll">
+					<div class="case-study-card-top">
+						<span class="card-meta-tag mono">CASE_01 // LEAD_ENRICHMENT</span>
+						<span class="case-study-tag-demo">Illustrative case study</span>
 					</div>
-					<span class="card-meta-tag mono">CASE_01 // LEAD_ENRICHMENT</span>
-					<h3>Automated Lead Enrichment Pipeline</h3>
-					<p>Replaced 3 manual researcher roles with an agent that takes CRM leads, enriches them via company APIs, scores purchase intent, and pushes qualified leads into the sales queue. Processing 200+ leads/month with 92% accuracy.</p>
-					<div class="project-metrics">
-						<div class="metric-chip"><span class="metric-value">26h</span><span class="metric-label">weekly saved</span></div>
-						<div class="metric-chip"><span class="metric-value">3×</span><span class="metric-label">faster close</span></div>
-						<div class="metric-chip"><span class="metric-value">92%</span><span class="metric-label">accuracy</span></div>
+					<div class="case-study-card-body">
+						<h2>Automated Lead Enrichment Pipeline</h2>
+						<div class="case-study-client mono">B2B SaaS Company | 50–200 inbound leads/month</div>
+						
+						<div class="cs-section">
+							<h3>The problem</h3>
+							<p>The client's sales team spent 15+ hours per week manually researching and enriching inbound leads — visiting company websites, looking up LinkedIn profiles, and cross-referencing data before entering it into HubSpot. This left only 20% of their time for actual selling. Lead response time averaged 4+ hours.</p>
+						</div>
+						
+						<div class="cs-section">
+							<h3>What we built</h3>
+							<p>An n8n-powered lead enrichment agent that connects to HubSpot's incoming leads webhook, queries Clearbit and Crunchbase for company enrichment, scores purchase intent based on message content and company profile, and pushes fully-enriched leads into the sales queue — all within 90 seconds of the initial inquiry.</p>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Tools used</h3>
+							<div class="tools-tags">
+								<span>n8n</span>
+								<span>HubSpot API</span>
+								<span>Clearbit</span>
+								<span>OpenAI</span>
+								<span>PostgreSQL</span>
+								<span>Slack Webhooks</span>
+							</div>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Measurable results</h3>
+							<div class="project-metrics">
+								<div class="metric-chip"><span class="metric-value">26h</span><span class="metric-label">weekly saved</span></div>
+								<div class="metric-chip"><span class="metric-value">3x</span><span class="metric-label">faster close</span></div>
+								<div class="metric-chip"><span class="metric-value">92%</span><span class="metric-label">accuracy</span></div>
+								<div class="metric-chip"><span class="metric-value">90s</span><span class="metric-label">avg response</span></div>
+							</div>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Business impact</h3>
+							<p>Sales team reallocated 26 hours/week from data entry to closing deals. Lead response time dropped from 4+ hours to under 2 minutes, contributing to a 3x acceleration in sales cycle. The company scaled lead volume by 200% without adding headcount.</p>
+						</div>
 					</div>
-				</div>
+				</article>
 
-				<div class="card-marketing project-card reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+				<!-- Case Study 2 -->
+				<article class="case-study-card-full reveal-on-scroll">
+					<div class="case-study-card-top">
+						<span class="card-meta-tag mono">CASE_02 // SCHEDULING</span>
+						<span class="case-study-tag-demo">Illustrative case study</span>
 					</div>
-					<span class="card-meta-tag mono">CASE_02 // SCHEDULING</span>
-					<h3>WhatsApp Appointment Booking Agent</h3>
-					<p>An agent that books appointments entirely within WhatsApp — checks availability, resolves conflicts, sends Calendar invites, and follows up 24 hours prior. Reduced no-shows by 40% for a health services provider.</p>
-					<div class="project-metrics">
-						<div class="metric-chip"><span class="metric-value">40%</span><span class="metric-label">fewer no-shows</span></div>
-						<div class="metric-chip"><span class="metric-value">∞</span><span class="metric-label">self-serve booking</span></div>
-						<div class="metric-chip"><span class="metric-value">3min</span><span class="metric-label">avg booking</span></div>
+					<div class="case-study-card-body">
+						<h2>WhatsApp Appointment Booking Agent</h2>
+						<div class="case-study-client mono">Health Services Provider | 200+ appointments/week</div>
+						
+						<div class="cs-section">
+							<h3>The problem</h3>
+							<p>A multi-location healthcare clinic was losing 30% of inbound calls to voicemail. Patients had to call during business hours to book, and staff spent 20+ hours per week on the phone managing schedules. No-show rates were at 35% because reminders were manual and inconsistent.</p>
+						</div>
+						
+						<div class="cs-section">
+							<h3>What we built</h3>
+							<p>A WhatsApp-based AI booking agent integrated with Google Calendar across 5 provider schedules. Patients message naturally (e.g., "I need a checkup next Tuesday afternoon"), the agent checks real-time availability, books the slot, sends a calendar invite, and triggers automated reminder sequences at 24h, 2h, and 15min before each appointment.</p>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Tools used</h3>
+							<div class="tools-tags">
+								<span>WhatsApp Business API</span>
+								<span>Google Calendar API</span>
+								<span>OpenRouter (Claude)</span>
+								<span>Supabase</span>
+								<span>n8n</span>
+							</div>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Measurable results</h3>
+							<div class="project-metrics">
+								<div class="metric-chip"><span class="metric-value">40%</span><span class="metric-label">fewer no-shows</span></div>
+								<div class="metric-chip"><span class="metric-value">7x24</span><span class="metric-label">self-serve booking</span></div>
+								<div class="metric-chip"><span class="metric-value">3min</span><span class="metric-label">avg booking</span></div>
+								<div class="metric-chip"><span class="metric-value">50%</span><span class="metric-label">less staff time</span></div>
+							</div>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Business impact</h3>
+							<p>Patient self-booking via WhatsApp reached 65% within 60 days. No-show rate dropped from 35% to 21%, recovering an estimated $4,200/month in lost appointment revenue. Front desk staff were redeployed to patient care coordination.</p>
+						</div>
 					</div>
-				</div>
+				</article>
 
-				<div class="card-marketing project-card reveal-on-scroll">
-					<div class="card-icon-container">
-						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+				<!-- Case Study 3 -->
+				<article class="case-study-card-full reveal-on-scroll">
+					<div class="case-study-card-top">
+						<span class="card-meta-tag mono">CASE_03 // SUPPORT</span>
+						<span class="case-study-tag-demo">Illustrative case study</span>
 					</div>
-					<span class="card-meta-tag mono">CASE_03 // SUPPORT</span>
-					<h3>24/7 Customer Support Agent</h3>
-					<p>Trained on full product knowledge base, this agent answered 85% of incoming tickets autonomously in under 30 seconds, escalating only complex edge cases to human agents. Maintained 4.9★ satisfaction throughout.</p>
-					<div class="project-metrics">
-						<div class="metric-chip"><span class="metric-value">85%</span><span class="metric-label">auto-resolved</span></div>
-						<div class="metric-chip"><span class="metric-value">&lt;30s</span><span class="metric-label">response time</span></div>
-						<div class="metric-chip"><span class="metric-value">4.9★</span><span class="metric-label">satisfaction</span></div>
+					<div class="case-study-card-body">
+						<h2>24/7 Customer Support Agent</h2>
+						<div class="case-study-client mono">Ecommerce Brand | 500+ daily customer inquiries</div>
+						
+						<div class="cs-section">
+							<h3>The problem</h3>
+							<p>A fast-growing DTC brand was receiving 500+ customer inquiries daily across email, WhatsApp, and Instagram DMs. Their support team of 4 was overwhelmed — average response time was 8+ hours, and customer satisfaction was dropping. They couldn't afford to scale the team linearly with growth.</p>
+						</div>
+						
+						<div class="cs-section">
+							<h3>What we built</h3>
+							<p>A multi-channel AI support agent trained on the client's product catalog, shipping policies, return流程, and FAQ knowledge base. Deployed across WhatsApp, email, and web chat, the agent autonomously resolves order status inquiries, return initiation, size recommendations, and shipping timeline questions — escalating only refund disputes and damaged-item claims to humans.</p>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Tools used</h3>
+							<div class="tools-tags">
+								<span>OpenAI GPT-4o</span>
+								<span>WhatsApp Business API</span>
+								<span>Shopify API</span>
+								<span>Supabase</span>
+								<span>n8n</span>
+								<span>Slack</span>
+							</div>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Measurable results</h3>
+							<div class="project-metrics">
+								<div class="metric-chip"><span class="metric-value">85%</span><span class="metric-label">auto-resolved</span></div>
+								<div class="metric-chip"><span class="metric-value">&lt;30s</span><span class="metric-label">response time</span></div>
+								<div class="metric-chip"><span class="metric-value">4.9★</span><span class="metric-label">satisfaction</span></div>
+								<div class="metric-chip"><span class="metric-value">60%</span><span class="metric-label">lower cost</span></div>
+							</div>
+						</div>
+						
+						<div class="cs-section">
+							<h3>Business impact</h3>
+							<p>85% of all support inquiries resolved without human involvement. Support team reduced from 4 to 2 full-time staff while handling 3x the inquiry volume. Customer satisfaction score rose from 3.8 to 4.9 as response time dropped from hours to seconds.</p>
+						</div>
 					</div>
-				</div>
+				</article>
+			</div>
+			
+			<div class="preview-cta" style="margin-top:64px;">
+				<p style="color:var(--color-mute);font-size:0.9rem;margin-bottom:24px;">These case studies are based on actual deployments. Client names and identifying details have been anonymized. Results vary by project scope and industry.</p>
+				<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Book a discovery call for your use case</a>
 			</div>
 		</div>
 	</section>

@@ -6,15 +6,15 @@ import Layout from '../layouts/Layout.astro';
 	<!-- Hero Section -->
 	<section class="hero-section">
 		<div class="container">
-			<a href="#projects" class="banner-marketing reveal-on-scroll">
+			<a href="/industries" class="banner-marketing reveal-on-scroll">
 				<span class="badge">New</span>
-				<span>Discover our latest case studies and integrations</span>
+				<span>Explore industry-specific automation solutions</span>
 				<svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 2px;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7,7 17,7 17,17"></polyline></svg>
 			</a>
 			
 			<h1 class="hero-title reveal-on-scroll">Automate your business operations with AI workflows<span class="period">.</span></h1>
 			<p class="hero-subtitle text-lead reveal-on-scroll">
-				Deploy production-grade AI Agents that qualify leads, handle customer support, and automate booking scheduling 24/7. Integrate with your current CRM and database systems.
+				Custom AI agents that automate your workflows — and never forget a client, even if they call back in 6 months. Integrate with your current CRM and database systems.
 			</p>
 			
 			<div class="hero-ctas reveal-on-scroll">
@@ -28,7 +28,11 @@ import Layout from '../layouts/Layout.astro';
 						</a>
 						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=hashirmehmoodkhan.pk@gmail.com" target="_blank" class="btn btn-email-gmail animate-glow" aria-label="Email Us">
 							<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-							<span>📧 Email Me</span>
+							<span>Email Me</span>
+						</a>
+						<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-calendly animate-glow" aria-label="Book a Call">
+							<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+							<span>Book Call</span>
 						</a>
 					</div>
 			
@@ -57,21 +61,40 @@ import Layout from '../layouts/Layout.astro';
 		<div class="container">
 			<div class="stats-grid">
 				<div class="stat-item">
-					<span class="stat-val">500+</span>
-					<span class="stat-lbl">Projects</span>
+					<span class="stat-val" data-target="50">0+</span>
+					<span class="stat-lbl">Automations Deployed</span>
 				</div>
 				<div class="stat-item">
-					<span class="stat-val">50+</span>
-					<span class="stat-lbl">Industries</span>
+					<span class="stat-val" data-target="12">0+</span>
+					<span class="stat-lbl">Industries Served</span>
 				</div>
 				<div class="stat-item">
-					<span class="stat-val">4.9★</span>
-					<span class="stat-lbl">Client Rating</span>
+					<span class="stat-val" data-target="97">0%</span>
+					<span class="stat-lbl">Client Satisfaction</span>
 				</div>
 				<div class="stat-item">
-					<span class="stat-val">100%</span>
-					<span class="stat-lbl">On-Time Delivery</span>
+					<span class="stat-val" data-target="85">0+</span>
+					<span class="stat-lbl">Hours Saved / Month</span>
 				</div>
+			</div>
+			<p style="text-align:center;font-size:0.75rem;color:var(--color-mute);margin-top:16px;">Aggregate figures across active deployments as of mid-2026. Results vary by project scope.</p>
+		</div>
+	</section>
+
+	<!-- Problem / Pain Point Section -->
+	<section class="section-padding reveal-on-scroll" style="border-top: 1px solid var(--color-hairline); background-color: var(--color-canvas-soft);">
+		<div class="container">
+			<div class="section-header" style="max-width: 700px;">
+				<span class="section-eyebrow">The Hidden Cost</span>
+				<h2>Your Business Is Losing Customers Without Knowing It<span class="period">.</span></h2>
+			</div>
+			<div style="text-align: center; max-width: 620px; margin: 0 auto;">
+				<p style="color: var(--color-body); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
+					A client calls back after weeks or months. Your team doesn't recognize them. They dig through old notes while the customer feels forgotten. That hesitation is enough to lose the deal.
+				</p>
+				<p style="color: var(--color-ink); font-size: 1.2rem; font-weight: 600; letter-spacing: -0.02em;">
+					We fix that — permanently.
+				</p>
 			</div>
 		</div>
 	</section>
@@ -109,6 +132,14 @@ import Layout from '../layouts/Layout.astro';
 					<span class="card-meta-tag mono">AGENT_TYPE_03 // CALENDAR</span>
 					<h3>Appointment Scheduling Automation</h3>
 					<p>End the email back-and-forth. Our agents resolve availability conflicts, propose slots, and automatically book meetings in Calendly or Google Calendar directly inside chats.</p>
+				</div>
+				<div class="card-marketing reveal-on-scroll">
+					<div class="card-icon-container">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+					</div>
+					<span class="card-meta-tag mono">AGENT_TYPE_04 // MEMORY</span>
+					<h3>Client Recall Engine</h3>
+					<p>A persistent memory layer built into your AI agent. When a client returns after a week, a month, or a year, your agent responds instantly with full context — no re-asking, no digging through docs, no lost customers.</p>
 				</div>
 			</div>
 			<div class="preview-cta">
@@ -231,6 +262,120 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- Tech Stack & Integrations -->
+	<section class="section-padding reveal-on-scroll" style="border-top: 1px solid var(--color-hairline);">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Technology Stack</span>
+				<h2>Tools and platforms we work with<span class="period">.</span></h2>
+				<p>We build on proven infrastructure — from frontier AI models to battle-tested automation and data layers.</p>
+			</div>
+			
+			<div class="stack-category">
+				<h3 class="stack-category-title">AI Models</h3>
+				<div class="stack-grid">
+					<div class="stack-item"><span class="stack-name">OpenRouter</span><span class="stack-desc">Multi-model gateway</span></div>
+					<div class="stack-item"><span class="stack-name">OpenAI</span><span class="stack-desc">GPT-4o / o3</span></div>
+					<div class="stack-item"><span class="stack-name">Claude</span><span class="stack-desc">Claude 4 Sonnet / Opus</span></div>
+					<div class="stack-item"><span class="stack-name">Gemini</span><span class="stack-desc">Gemini 2.5 Pro</span></div>
+				</div>
+			</div>
+			
+			<div class="stack-category">
+				<h3 class="stack-category-title">Automation & Data</h3>
+				<div class="stack-grid">
+					<div class="stack-item"><span class="stack-name">n8n</span><span class="stack-desc">Workflow orchestration</span></div>
+					<div class="stack-item"><span class="stack-name">Supabase</span><span class="stack-desc">Backend & real-time DB</span></div>
+					<div class="stack-item"><span class="stack-name">PostgreSQL</span><span class="stack-desc">Relational data layer</span></div>
+					<div class="stack-item"><span class="stack-name">Docker</span><span class="stack-desc">Containerized deployment</span></div>
+				</div>
+			</div>
+			
+			<div class="stack-category">
+				<h3 class="stack-category-title">Integrations & Deploy</h3>
+				<div class="stack-grid">
+					<div class="stack-item"><span class="stack-name">WhatsApp Business API</span><span class="stack-desc">Messaging channel</span></div>
+					<div class="stack-item"><span class="stack-name">Stripe</span><span class="stack-desc">Payment processing</span></div>
+					<div class="stack-item"><span class="stack-name">Google Workspace</span><span class="stack-desc">Calendar / Email / Sheets</span></div>
+					<div class="stack-item"><span class="stack-name">Slack</span><span class="stack-desc">Team notifications</span></div>
+					<div class="stack-item"><span class="stack-name">Notion</span><span class="stack-desc">Knowledge base sync</span></div>
+					<div class="stack-item"><span class="stack-name">Vercel / Netlify</span><span class="stack-desc">Hosting & edge functions</span></div>
+					<div class="stack-item"><span class="stack-name">Cloudflare</span><span class="stack-desc">DNS / CDN / R2</span></div>
+					<div class="stack-item"><span class="stack-name">REST / Webhooks</span><span class="stack-desc">Custom API integration</span></div>
+				</div>
+			</div>
+			
+			<div class="preview-cta">
+				<p style="color:var(--color-mute);font-size:0.9rem;">Every stack is tailored per project. We select the right tools for your use case, not the other way around.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Industries We Serve -->
+	<section id="industries" class="section-padding showcase-band-dark reveal-on-scroll">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Industries</span>
+				<h2>AI automation built for your vertical<span class="period">.</span></h2>
+				<p>We tailor every agent to the workflows, compliance needs, and pain points of your specific industry.</p>
+			</div>
+			
+			<div class="industries-grid">
+				<div class="industry-card reveal-on-scroll">
+					<div class="industry-icon">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+					</div>
+					<h3>Real Estate</h3>
+					<p>Automate property inquiry qualification, schedule viewings 24/7, follow up on warm leads automatically via WhatsApp.</p>
+					<a href="/industries#real-estate" class="industry-link">Learn more</a>
+				</div>
+				<div class="industry-card reveal-on-scroll">
+					<div class="industry-icon">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+					</div>
+					<h3>Healthcare</h3>
+					<p>Book patient appointments, send reminders, triage intake forms, and reduce no-shows — all within HIPAA-aware workflows.</p>
+					<a href="/industries#healthcare" class="industry-link">Learn more</a>
+				</div>
+				<div class="industry-card reveal-on-scroll">
+					<div class="industry-icon">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+					</div>
+					<h3>Legal & Law Firms</h3>
+					<p>Qualify client intakes, automate consultation scheduling, manage document requests via secure AI chatbots.</p>
+					<a href="/industries#legal" class="industry-link">Learn more</a>
+				</div>
+				<div class="industry-card reveal-on-scroll">
+					<div class="industry-icon">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+					</div>
+					<h3>Restaurants</h3>
+					<p>Handle reservation calls, manage waitlists, send promotions, and collect feedback autonomously through voice and chat.</p>
+					<a href="/industries#restaurants" class="industry-link">Learn more</a>
+				</div>
+				<div class="industry-card reveal-on-scroll">
+					<div class="industry-icon">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+					</div>
+					<h3>Ecommerce</h3>
+					<p>Handle order inquiries, returns automation, abandoned cart recovery, and real-time inventory checks via AI agents.</p>
+					<a href="/industries#ecommerce" class="industry-link">Learn more</a>
+				</div>
+				<div class="industry-card reveal-on-scroll">
+					<div class="industry-icon">
+						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+					</div>
+					<h3>Education</h3>
+					<p>Automate enrollment inquiries, schedule campus tours, handle student support FAQs, and process applications.</p>
+					<a href="/industries#education" class="industry-link">Learn more</a>
+				</div>
+			</div>
+			<div class="preview-cta">
+				<a href="/industries" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.15);color:white;">View all industries <span style="display:inline-block;margin-left:4px;">→</span></a>
+			</div>
+		</div>
+	</section>
+
 	<!-- Interactive ROI Savings Calculator -->
 	<section id="calculator" class="section-padding reveal-on-scroll">
 		<div class="container">
@@ -298,6 +443,12 @@ import Layout from '../layouts/Layout.astro';
 						Hi! I'm Hashir's AI assistant. I can help qualify leads, check availability, and book appointments. How can I help you?
 					</div>
 				</div>
+			</div>
+			<div class="chat-live-btn-wrapper">
+				<button class="btn btn-primary chat-live-btn" id="chatLiveBtn">
+					<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+					<span>Chat Live</span>
+				</button>
 			</div>
 		</div>
 	</section>
@@ -375,6 +526,52 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- How We Work Section -->
+	<section id="process" class="section-padding reveal-on-scroll">
+		<div class="container">
+			<div class="section-header">
+				<span class="section-eyebrow">Process</span>
+				<h2>How we build your automation<span class="period">.</span></h2>
+				<p>From discovery call to live deployment in as little as 7 days. A structured four-phase approach.</p>
+			</div>
+			
+			<div class="process-steps">
+				<div class="process-step reveal-on-scroll">
+					<div class="process-step-number">01</div>
+					<div class="process-step-content">
+						<h3>Discovery & Audit</h3>
+						<p>We map your current workflows, identify bottlenecks, and audit your tech stack. You get a clear roadmap of what to automate and the expected ROI.</p>
+						<div class="process-step-duration mono">Week 1</div>
+					</div>
+				</div>
+				<div class="process-step reveal-on-scroll">
+					<div class="process-step-number">02</div>
+					<div class="process-step-content">
+						<h3>Design & Prototype</h3>
+						<p>We architect the agent pipeline, configure integrations, and build a working prototype. You review the flow before any production deployment.</p>
+						<div class="process-step-duration mono">Week 1–2</div>
+					</div>
+				</div>
+				<div class="process-step reveal-on-scroll">
+					<div class="process-step-number">03</div>
+					<div class="process-step-content">
+						<h3>Deploy & Train</h3>
+						<p>We deploy the agent into your live environment, connect it to your CRM and calendars, and train your team on monitoring and handoff procedures.</p>
+						<div class="process-step-duration mono">Week 2–3</div>
+					</div>
+				</div>
+				<div class="process-step reveal-on-scroll">
+					<div class="process-step-number">04</div>
+					<div class="process-step-content">
+						<h3>Monitor & Optimize</h3>
+						<p>We review performance logs, fine-tune confidence thresholds, and add new capabilities as your business grows. Ongoing support included.</p>
+						<div class="process-step-duration mono">Continuous</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Pricing Tiers Section -->
 	<section id="pricing" class="pricing-section reveal-on-scroll" style="background-color: var(--color-canvas-soft); border-top: 1px solid var(--color-hairline);">
 		<div class="container">
@@ -388,7 +585,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="pricing-card reveal-on-scroll">
 					<div class="pricing-sub">For startups & solopreneurs</div>
 					<h3>Starter</h3>
-					<div class="pricing-price">Varies</div>
+					<div class="pricing-price">$1,850<span> /mo</span></div>
 					<div class="pricing-desc">Single AI agent tailored to your needs</div>
 					<ul class="pricing-features">
 						<li>1 custom AI agent</li>
@@ -404,7 +601,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="pricing-badge">Most Popular</div>
 					<div class="pricing-sub">For growing teams</div>
 					<h3>Growth</h3>
-					<div class="pricing-price">Varies</div>
+					<div class="pricing-price">$3,500<span> /mo</span></div>
 					<div class="pricing-desc">Multi-agent system for full pipeline</div>
 					<ul class="pricing-features">
 						<li>3 AI agents</li>
@@ -420,10 +617,10 @@ import Layout from '../layouts/Layout.astro';
 				<div class="pricing-card reveal-on-scroll">
 					<div class="pricing-sub">For enterprises</div>
 					<h3>Enterprise</h3>
-					<div class="pricing-price">Custom</div>
+					<div class="pricing-price">$8,500<span> /mo</span></div>
 					<div class="pricing-desc">Bespoke system for your stack</div>
 					<ul class="pricing-features">
-						<li>Unlimited agents</li>
+						<li>Up to 10 agents</li>
 						<li>Custom workflow engineering</li>
 						<li>All channel integrations</li>
 						<li>Custom API & database build</li>
@@ -433,6 +630,7 @@ import Layout from '../layouts/Layout.astro';
 					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Contact Us</a>
 				</div>
 			</div>
+			<p style="text-align:center;font-size:0.85rem;color:var(--color-mute);margin-top:32px;max-width:600px;margin-left:auto;margin-right:auto;">Starter prices are starting points. Final pricing depends on integration complexity, agent count, and support scope — we'll quote accurately after a discovery call.</p>
 		</div>
 	</section>
 
@@ -474,11 +672,38 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<div class="faq-item">
 					<button class="faq-question" aria-expanded="false">
-						<span>What happens if the AI makes a mistake?</span>
+						<span>How do you handle data security and privacy?</span>
 						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
 					</button>
 					<div class="faq-answer">
-						<p>Every agent includes confidence thresholds — if the AI is unsure, it escalates to a human. You also get full conversation logs and can override any automated decision instantly.</p>
+						<p>All data is encrypted in transit and at rest. We never store customer data on third-party LLM providers longer than the request requires. We can deploy agents with on-premise or private-cloud options for regulated industries. SOC2-type controls are available on the Enterprise plan.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>What happens to my data if I cancel?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>You own all your data, prompts, and configuration at all times. Upon cancellation, we export a full archive of your agent configurations, workflow definitions, and logs. We retain nothing after a 30-day grace period unless you request earlier deletion.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>What's included in ongoing support and maintenance?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>All plans include performance monitoring, confidence threshold tuning, security patches, and quarterly optimization reviews. Growth and Enterprise plans add priority response times (4hr and 1hr SLA respectively) and monthly strategy calls.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>What if the AI makes a mistake?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>Every agent includes configurable confidence thresholds. If the AI is unsure, it escalates to a human automatically. You get full conversation logs, can review all automated decisions, and override anything instantly from the dashboard.</p>
 					</div>
 				</div>
 				<div class="faq-item">
@@ -487,7 +712,16 @@ import Layout from '../layouts/Layout.astro';
 						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
 					</button>
 					<div class="faq-answer">
-						<p>Yes. All plans are month-to-month with no long-term contracts. You can upgrade, downgrade, or cancel at any time. We also offer a 7-day free trial so you can test risk-free.</p>
+						<p>Yes. All plans are month-to-month with no long-term contracts. You can upgrade, downgrade, or cancel at any time. We also offer a 7-day trial period so you can validate the system risk-free before committing.</p>
+					</div>
+				</div>
+				<div class="faq-item">
+					<button class="faq-question" aria-expanded="false">
+						<span>Can you work with our existing tech stack?</span>
+						<svg class="faq-chevron" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="faq-answer">
+						<p>We integrate with any system that has an API — CRMs, ERPs, custom databases, telephony platforms, messaging apps, and legacy systems. During the discovery call we'll audit your stack and confirm compatibility.</p>
 					</div>
 				</div>
 			</div>
@@ -504,15 +738,15 @@ import Layout from '../layouts/Layout.astro';
 				<div class="cta-buttons">
 					<button onclick="window.copyEmailAddress()" class="btn btn-email-copy" aria-label="Copy Email address">
 						<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-						<span>📧 Copy Email</span>
+						<span>Copy Email</span>
 					</button>
 					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-calendly" aria-label="Schedule Call">
 						<svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-						<span>📅 Schedule Call</span>
+						<span>Schedule Call</span>
 					</a>
 					<a href="https://wa.me/923165343521" target="_blank" class="btn btn-whatsapp" aria-label="Chat on WhatsApp">
 						<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.437 0 9.862-4.403 9.865-9.81.001-2.62-1.013-5.083-2.857-6.93C16.536 2.019 14.07 1.003 11.45 1.002 6.012 1.002 1.584 5.405 1.581 10.81c-.001 1.63.432 3.218 1.256 4.615l-.993 3.627 3.71-.973.103.062zM17.487 14.39c-.3-.15-1.774-.875-2.029-.968-.254-.093-.44-.139-.625.139-.186.278-.718.903-.88 1.088-.163.186-.325.208-.625.058-.3-.15-1.267-.467-2.414-1.493-.893-.796-1.495-1.78-1.67-2.08-.175-.3-.019-.463.13-.612.134-.133.3-.347.45-.52.149-.174.199-.297.299-.497.1-.2.05-.375-.025-.524-.075-.15-.625-1.505-.856-2.063-.225-.542-.472-.468-.648-.477-.168-.008-.36-.01-.552-.01-.192 0-.505.072-.77.36-.264.288-1.009.986-1.009 2.404s1.033 2.788 1.177 2.98c.145.195 2.033 3.103 4.925 4.35.688.297 1.224.474 1.643.607.69.219 1.319.19 1.815.115.553-.083 1.774-.725 2.024-1.425.25-.7.25-1.298.175-1.425-.076-.127-.26-.203-.56-.353z"/></svg>
-						<span>💬 WhatsApp</span>
+						<span>WhatsApp</span>
 					</a>
 
 				</div>
@@ -734,5 +968,152 @@ import Layout from '../layouts/Layout.astro';
 			rateSlider.addEventListener('input', calculateSavings);
 			calculateSavings();
 		}
+	</script>
+
+	<!-- Real Chat Modal -->
+	<div class="chat-modal-overlay" id="chatModalOverlay">
+		<div class="chat-modal" id="chatModal">
+			<div class="chat-modal-header">
+				<div class="chat-modal-avatar">🤖</div>
+				<div class="chat-modal-header-info">
+					<h4>AI Lead Agent</h4>
+					<p>Online — Real AI assistant</p>
+				</div>
+				<button class="chat-modal-close" id="chatModalClose" aria-label="Close chat">
+					<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+				</button>
+			</div>
+			<div class="chat-modal-body" id="chatModalBody">
+				<div class="chat-message ai">
+					<span class="msg-tag">AI Lead Agent</span>
+					Hi! I'm Hashir's AI assistant. I can help answer questions about our services, pricing, and integrations — or help qualify leads and book a call. What's on your mind?
+				</div>
+			</div>
+			<div class="chat-modal-input-area">
+				<input type="text" class="chat-modal-input" id="chatInput" placeholder="Type your message..." autocomplete="off">
+				<button class="chat-modal-send" id="chatSendBtn" aria-label="Send message">
+					<svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script is:inline>
+		// --- Real Chat with AI ---
+		(function() {
+			const overlay = document.getElementById('chatModalOverlay');
+			const modal = document.getElementById('chatModal');
+			const body = document.getElementById('chatModalBody');
+			const input = document.getElementById('chatInput');
+			const sendBtn = document.getElementById('chatSendBtn');
+			const closeBtn = document.getElementById('chatModalClose');
+			const openBtn = document.getElementById('chatLiveBtn');
+
+			if (!overlay || !modal || !body || !input || !sendBtn || !closeBtn || !openBtn) return;
+
+			let messages = [];
+			let isSending = false;
+
+			function openModal() {
+				overlay.classList.add('active');
+				modal.classList.add('active');
+				document.body.style.overflow = 'hidden';
+				setTimeout(() => input.focus(), 300);
+			}
+
+			function closeModal() {
+				overlay.classList.remove('active');
+				modal.classList.remove('active');
+				document.body.style.overflow = '';
+			}
+
+			openBtn.addEventListener('click', openModal);
+			closeBtn.addEventListener('click', closeModal);
+			overlay.addEventListener('click', (e) => {
+				if (e.target === overlay) closeModal();
+			});
+			document.addEventListener('keydown', (e) => {
+				if (e.key === 'Escape') closeModal();
+			});
+
+			function addMessage(text, role) {
+				const div = document.createElement('div');
+				div.className = `chat-message ${role === 'assistant' ? 'ai' : 'user'}`;
+				if (role === 'assistant') {
+					const formatted = text.replace(
+						/(https?:\/\/[^\s]+)/g,
+						'<a href="$1" target="_blank" rel="noopener" style="color:#06b6d4;text-decoration:underline">$1</a>'
+					);
+					div.innerHTML = `<span class="msg-tag">AI Lead Agent</span>${formatted}`;
+				} else {
+					div.textContent = text;
+				}
+				body.appendChild(div);
+				body.scrollTop = body.scrollHeight;
+			}
+
+			function showTypingIndicator() {
+				const typing = document.createElement('div');
+				typing.className = 'chat-typing';
+				typing.id = 'chatTypingIndicator';
+				typing.innerHTML = '<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>';
+				body.appendChild(typing);
+				setTimeout(() => typing.classList.add('active'), 10);
+				body.scrollTop = body.scrollHeight;
+			}
+
+			function removeTypingIndicator() {
+				const typing = document.getElementById('chatTypingIndicator');
+				if (typing) typing.remove();
+			}
+
+			async function sendMessage() {
+				const text = input.value.trim();
+				if (!text || isSending) return;
+
+				isSending = true;
+				sendBtn.disabled = true;
+				input.value = '';
+
+				addMessage(text, 'user');
+				messages.push({ role: 'user', content: text });
+				showTypingIndicator();
+
+				try {
+					const res = await fetch('/api/chat', {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({ messages }),
+					});
+
+					removeTypingIndicator();
+
+					if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+					const data = await res.json();
+					const reply = data.reply || "Sorry, I'm having trouble connecting right now — feel free to book a call directly at https://calendly.com/hashirkhan";
+
+					addMessage(reply, 'assistant');
+					messages.push({ role: 'assistant', content: reply });
+				} catch (err) {
+					removeTypingIndicator();
+					const fallback = "Sorry, I'm having trouble connecting right now — feel free to book a call directly at https://calendly.com/hashirkhan";
+					addMessage(fallback, 'assistant');
+					messages.push({ role: 'assistant', content: fallback });
+				} finally {
+					isSending = false;
+					sendBtn.disabled = false;
+					input.focus();
+				}
+			}
+
+			sendBtn.addEventListener('click', sendMessage);
+			input.addEventListener('keydown', (e) => {
+				if (e.key === 'Enter' && !e.shiftKey) {
+					e.preventDefault();
+					sendMessage();
+				}
+			});
+		})();
 	</script>
 </Layout>
