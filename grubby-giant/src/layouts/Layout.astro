@@ -236,35 +236,36 @@ const {
 
 				const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-				// Scroll reveal with staggered delays
+				// Scroll reveal with staggered delays — supports all reveal-* classes
+				const revealTypes = ['.reveal-on-scroll', '.reveal-left', '.reveal-right', '.reveal-scale', '.reveal-stagger'];
 				const observer = new IntersectionObserver((entries) => {
 					entries.forEach(entry => {
 						if (entry.isIntersecting) {
-							const cards = entry.target.querySelectorAll('.reveal-on-scroll');
 							entry.target.classList.add('revealed');
-							if (cards.length > 1) {
-								cards.forEach((card, i) => {
-									if (reducedMotion) {
-										card.classList.add('revealed');
-									} else {
-										setTimeout(() => card.classList.add('revealed'), i * 80);
-									}
+							revealTypes.forEach(sel => {
+								const els = entry.target.querySelectorAll(sel);
+								els.forEach((el, i) => {
+									if (reducedMotion) { el.classList.add('revealed'); }
+									else if (sel === '.reveal-stagger') { el.classList.add('revealed'); }
+									else { setTimeout(() => el.classList.add('revealed'), i * 80); }
 								});
-							} else if (cards.length === 1) {
-								cards[0].classList.add('revealed');
-							}
+							});
 							observer.unobserve(entry.target);
 						}
 					});
 				}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 				// Instantly reveal hero children (above fold, no scroll needed)
-				document.querySelectorAll('.hero-section .reveal-on-scroll').forEach(el => el.classList.add('revealed'));
+				revealTypes.forEach(sel => {
+					document.querySelectorAll(`.hero-section ${sel}`).forEach(el => el.classList.add('revealed'));
+				});
 
 				document.querySelectorAll('.section-padding, .stats-bar, .cta-band, .agent-flow-section, .chat-demo-section, .pricing-section, .faq-section').forEach(el => {
 					const rect = el.getBoundingClientRect();
 					const isInView = rect.top < window.innerHeight && rect.bottom > 0;
 					if (isInView) {
-						el.querySelectorAll('.reveal-on-scroll').forEach(card => card.classList.add('revealed'));
+						revealTypes.forEach(sel => {
+							el.querySelectorAll(sel).forEach(card => card.classList.add('revealed'));
+						});
 					}
 					observer.observe(el);
 				});
@@ -362,6 +363,49 @@ const {
 						hero.style.setProperty('--mouse-y', y);
 					});
 				}
+
+				// Magnetic button effect — subtle cursor-follow on primary CTAs
+				if (!isTouch && !reducedMotion) {
+					document.querySelectorAll('.btn-primary, .btn-whatsapp, .btn-calendly, .btn-email-gmail, .btn-pricing-popular').forEach(btn => {
+						btn.addEventListener('mousemove', (e) => {
+							const rect = btn.getBoundingClientRect();
+							const x = (e.clientX - rect.left) / rect.width - 0.5;
+							const y = (e.clientY - rect.top) / rect.height - 0.5;
+							btn.style.transform = `translate(${x * 8}px, ${y * 8}px)`;
+						});
+						btn.addEventListener('mouseleave', () => {
+							btn.style.transform = '';
+						});
+					});
+				}
+
+				// Animate process steps on reveal
+				const processObserver = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							const steps = entry.target.querySelectorAll('.process-step');
+							if (reducedMotion) {
+								steps.forEach(step => { step.style.opacity = '1'; step.style.transform = 'none'; });
+							} else {
+								steps.forEach((step, i) => {
+									setTimeout(() => {
+										step.style.opacity = '1';
+										step.style.transform = 'translateY(0)';
+									}, i * 120);
+								});
+							}
+							processObserver.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.15 });
+				document.querySelectorAll('.process-steps').forEach(el => {
+					el.querySelectorAll('.process-step').forEach(step => {
+						step.style.opacity = '0';
+						step.style.transform = 'translateY(20px)';
+						step.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+					});
+					processObserver.observe(el);
+				});
 
 				// Canvas particle background for hero
 				const heroSection = document.querySelector('.hero-section');

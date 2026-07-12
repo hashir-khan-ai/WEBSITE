@@ -223,7 +223,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			
 			<div class="case-studies-preview-grid">
-				<div class="case-study-card reveal-on-scroll">
+				<div class="case-study-card reveal-left">
 					<div class="case-study-top">
 						<div class="case-study-title-area">
 							<h3>Dental Clinic Automation</h3>
@@ -239,7 +239,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="case-study-card reveal-on-scroll">
+				<div class="case-study-card reveal-right">
 					<div class="case-study-top">
 						<div class="case-study-title-area">
 							<h3>Immigration Consulting Assistant</h3>
@@ -273,7 +273,7 @@ import Layout from '../layouts/Layout.astro';
 			
 			<div class="stack-category">
 				<h3 class="stack-category-title">AI Models</h3>
-				<div class="stack-grid">
+				<div class="stack-grid reveal-stagger">
 					<div class="stack-item"><span class="stack-name">OpenRouter</span><span class="stack-desc">Multi-model gateway</span></div>
 					<div class="stack-item"><span class="stack-name">OpenAI</span><span class="stack-desc">GPT-4o / o3</span></div>
 					<div class="stack-item"><span class="stack-name">Claude</span><span class="stack-desc">Claude 4 Sonnet / Opus</span></div>
@@ -283,7 +283,7 @@ import Layout from '../layouts/Layout.astro';
 			
 			<div class="stack-category">
 				<h3 class="stack-category-title">Automation & Data</h3>
-				<div class="stack-grid">
+				<div class="stack-grid reveal-stagger">
 					<div class="stack-item"><span class="stack-name">n8n</span><span class="stack-desc">Workflow orchestration</span></div>
 					<div class="stack-item"><span class="stack-name">Supabase</span><span class="stack-desc">Backend & real-time DB</span></div>
 					<div class="stack-item"><span class="stack-name">PostgreSQL</span><span class="stack-desc">Relational data layer</span></div>
@@ -293,7 +293,7 @@ import Layout from '../layouts/Layout.astro';
 			
 			<div class="stack-category">
 				<h3 class="stack-category-title">Integrations & Deploy</h3>
-				<div class="stack-grid">
+				<div class="stack-grid reveal-stagger">
 					<div class="stack-item"><span class="stack-name">WhatsApp Business API</span><span class="stack-desc">Messaging channel</span></div>
 					<div class="stack-item"><span class="stack-name">Stripe</span><span class="stack-desc">Payment processing</span></div>
 					<div class="stack-item"><span class="stack-name">Google Workspace</span><span class="stack-desc">Calendar / Email / Sheets</span></div>
@@ -320,8 +320,8 @@ import Layout from '../layouts/Layout.astro';
 				<p>We tailor every agent to the workflows, compliance needs, and pain points of your specific industry.</p>
 			</div>
 			
-			<div class="industries-grid">
-				<div class="industry-card reveal-on-scroll">
+			<div class="industries-grid reveal-stagger">
+				<div class="industry-card">
 					<div class="industry-icon">
 						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
 					</div>
@@ -329,7 +329,7 @@ import Layout from '../layouts/Layout.astro';
 					<p>Automate property inquiry qualification, schedule viewings 24/7, follow up on warm leads automatically via WhatsApp.</p>
 					<a href="/industries#real-estate" class="industry-link">Learn more</a>
 				</div>
-				<div class="industry-card reveal-on-scroll">
+				<div class="industry-card">
 					<div class="industry-icon">
 						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
 					</div>
@@ -337,7 +337,7 @@ import Layout from '../layouts/Layout.astro';
 					<p>Book patient appointments, send reminders, triage intake forms, and reduce no-shows — all within HIPAA-aware workflows.</p>
 					<a href="/industries#healthcare" class="industry-link">Learn more</a>
 				</div>
-				<div class="industry-card reveal-on-scroll">
+				<div class="industry-card">
 					<div class="industry-icon">
 						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
 					</div>
@@ -345,7 +345,7 @@ import Layout from '../layouts/Layout.astro';
 					<p>Qualify client intakes, automate consultation scheduling, manage document requests via secure AI chatbots.</p>
 					<a href="/industries#legal" class="industry-link">Learn more</a>
 				</div>
-				<div class="industry-card reveal-on-scroll">
+				<div class="industry-card">
 					<div class="industry-icon">
 						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
 					</div>
@@ -353,7 +353,7 @@ import Layout from '../layouts/Layout.astro';
 					<p>Handle reservation calls, manage waitlists, send promotions, and collect feedback autonomously through voice and chat.</p>
 					<a href="/industries#restaurants" class="industry-link">Learn more</a>
 				</div>
-				<div class="industry-card reveal-on-scroll">
+				<div class="industry-card">
 					<div class="industry-icon">
 						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
 					</div>
@@ -361,7 +361,7 @@ import Layout from '../layouts/Layout.astro';
 					<p>Handle order inquiries, returns automation, abandoned cart recovery, and real-time inventory checks via AI agents.</p>
 					<a href="/industries#ecommerce" class="industry-link">Learn more</a>
 				</div>
-				<div class="industry-card reveal-on-scroll">
+				<div class="industry-card">
 					<div class="industry-icon">
 						<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
 					</div>
@@ -385,7 +385,7 @@ import Layout from '../layouts/Layout.astro';
 				<p>See exactly how much resource overhead and time our custom AI workflows can reclaim for your operations.</p>
 			</div>
 			
-			<div class="calculator-box reveal-on-scroll">
+			<div class="calculator-box reveal-scale">
 				<div class="calculator-grids">
 					<div class="calculator-sliders">
 						<div class="slider-group">
@@ -457,14 +457,14 @@ import Layout from '../layouts/Layout.astro';
 	<section class="section-padding reveal-on-scroll" style="background-color: var(--color-canvas); border-top: 1px solid var(--color-hairline);">
 		<div class="container">
 			<div class="why-section-content">
-				<div>
+				<div class="reveal-left">
 					<span class="section-eyebrow">Our approach</span>
 					<h2 style="margin-bottom: 20px;">Why work with us<span class="period">.</span></h2>
 					<p style="color: var(--color-body); margin-bottom: 32px; font-size: 1.05rem;">
 						We build functional, custom automations, not cookie-cutter templates. Every integration is fine-tuned to connect directly with your existing software stack and drive return on investment.
 					</p>
 					
-					<ul class="why-bullets">
+					<ul class="why-bullets reveal-stagger">
 						<!-- Bullet 1 -->
 						<li class="why-bullet-item">
 							<span class="why-bullet-icon">✓</span>
@@ -501,7 +501,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				
 				<!-- Differentiator Mockup Diagram -->
-				<div class="why-graphic">
+				<div class="why-graphic reveal-right">
 					<div class="graphic-workflow-step">
 						<span class="step-label mono">1. Inbound inquiry (WhatsApp/Email)</span>
 						<span class="log-status info">Triggered</span>
@@ -581,8 +581,8 @@ import Layout from '../layouts/Layout.astro';
 				<p>Every plan includes a discovery call, custom integration, and 7-day free trial.</p>
 			</div>
 
-			<div class="pricing-grid">
-				<div class="pricing-card reveal-on-scroll">
+			<div class="pricing-grid reveal-stagger">
+				<div class="pricing-card">
 					<div class="pricing-sub">For startups & solopreneurs</div>
 					<h3>Starter</h3>
 					<div class="pricing-price">$1,850<span> /mo</span></div>
@@ -597,7 +597,7 @@ import Layout from '../layouts/Layout.astro';
 					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-primary">Get Started</a>
 				</div>
 
-				<div class="pricing-card popular reveal-on-scroll">
+				<div class="pricing-card popular">
 					<div class="pricing-badge">Most Popular</div>
 					<div class="pricing-sub">For growing teams</div>
 					<h3>Growth</h3>
@@ -614,7 +614,7 @@ import Layout from '../layouts/Layout.astro';
 					<a href="https://calendly.com/hashirkhan" target="_blank" class="btn btn-pricing-popular">Get Started</a>
 				</div>
 
-				<div class="pricing-card reveal-on-scroll">
+				<div class="pricing-card">
 					<div class="pricing-sub">For enterprises</div>
 					<h3>Enterprise</h3>
 					<div class="pricing-price">$8,500<span> /mo</span></div>
@@ -642,7 +642,7 @@ import Layout from '../layouts/Layout.astro';
 				<h2>Frequently asked questions<span class="period">.</span></h2>
 				<p>Common questions about our AI agent services, integration process, and what to expect.</p>
 			</div>
-			<div class="faq-list">
+			<div class="faq-list reveal-stagger">
 				<div class="faq-item">
 					<button class="faq-question" aria-expanded="false">
 						<span>How long does it take to deploy an AI agent?</span>
